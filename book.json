@@ -1,7 +1,4 @@
 {
-  "styles":{
-    "website":"book_sources/styles/website.css"
-  },
   "plugins": ["theme-comscore","-sharing"],
   "pluginsConfig": {
     "fontSettings": {
