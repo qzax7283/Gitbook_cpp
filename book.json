@@ -3,7 +3,8 @@
 		"prism",
 		"theme-comscore",
 		"-sharing",
-		"-highlight"
+		"-highlight",
+		"ace"
 	],
 	"pluginsConfig": {
 		"fontSettings": {
