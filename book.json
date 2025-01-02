@@ -1,6 +1,6 @@
 {
 	"plugins": [
-		"syntax-highlighting",
+		"prism",
 		"theme-comscore",
 		"-sharing",
 		"-highlight"
@@ -12,11 +12,6 @@
 		},
 		"theme-default": {
 			"showLevel": false
-		},
-		"syntax-highlighting": {
-			"css": [
-				"syntax-highlighting/assets/css/prism/prism-base16-google.light.css"
-			]
 		}
 	}
 }
