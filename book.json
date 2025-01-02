@@ -1,21 +1,21 @@
 {
 	"plugins": [
-		"prism",
+		"syntax-highlighting",
 		"theme-comscore",
 		"-sharing",
 		"-highlight"
 	],
 	"pluginsConfig": {
 		"fontSettings": {
-			"theme": "night",
+			"theme": "white",
 			"family": "sans"
 		},
 		"theme-default": {
 			"showLevel": false
 		},
-		"prism": {
+		"syntax-highlighting": {
 			"css": [
-				"prismjs/themes/prism-solarizedlight.css"
+				"syntax-highlighting/assets/css/prism/prism-base16-google.light.css"
 			]
 		}
 	}
