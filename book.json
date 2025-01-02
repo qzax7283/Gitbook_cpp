@@ -1,13 +1,22 @@
 {
-  "plugins": ["theme-comscore","-sharing"],
-  "pluginsConfig": {
-    "fontSettings": {
-      "theme": "night",
-      "family": "sans"
-    },
-    "theme-default": {
-      "showLevel": false
-    }
-    
-  }
+	"plugins": [
+		"prism",
+		"theme-comscore",
+		"-sharing",
+		"-highlight"
+	],
+	"pluginsConfig": {
+		"fontSettings": {
+			"theme": "night",
+			"family": "sans"
+		},
+		"theme-default": {
+			"showLevel": false
+		},
+		"prism": {
+			"css": [
+				"prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+			]
+		}
+	}
 }
