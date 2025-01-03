@@ -7,7 +7,7 @@
     display: flex;
     position: relative;
     align-self: stretch;
-    box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+    box-shadow: none !important;
     align-items: center;
     justify-self: stretch;
     flex-direction: row;
