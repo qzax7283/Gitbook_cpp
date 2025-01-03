@@ -3,7 +3,7 @@
 		"theme-comscore",
 		"-sharing",
 		"-highlight",
-		"ace"
+		"prism"
 	],
 	"pluginsConfig": {
 		"fontSettings": {
@@ -12,6 +12,11 @@
 		},
 		"theme-default": {
 			"showLevel": false
+		},
+		"prims": {
+			"css": [
+				"prismjs/themes/prism-tomorrow.css"
+			]
 		}
 	}
 }
