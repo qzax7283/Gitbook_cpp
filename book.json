@@ -2,8 +2,7 @@
 	"plugins": [
 		"theme-comscore",
 		"-sharing",
-		"-highlight",
-		"prism"
+		"highlight"
 	],
 	"pluginsConfig": {
 		"fontSettings": {
@@ -12,11 +11,6 @@
 		},
 		"theme-default": {
 			"showLevel": false
-		},
-		"prims": {
-			"css": [
-				"prismjs/themes/prism-okaidia.css"
-			]
 		}
 	}
 }
