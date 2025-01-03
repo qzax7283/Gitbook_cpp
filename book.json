@@ -6,7 +6,8 @@
 		"theme-comscore",
 		"-sharing",
 		"highlight",
-		"code"
+		"code",
+		"bottom-navigation"
 	],
 	"pluginsConfig": {
 		"fontSettings": {
