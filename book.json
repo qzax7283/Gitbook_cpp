@@ -2,7 +2,8 @@
 	"plugins": [
 		"theme-comscore",
 		"-sharing",
-		"highlight"
+		"highlight",
+		"code"
 	],
 	"pluginsConfig": {
 		"fontSettings": {
