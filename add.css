@@ -2,10 +2,10 @@
     display: none !important;
 }
 
-.navigation.navigation-prev {
+.navigation.navigation-prev.navigation-unique {
     display: none !important;
 }
 
-.navigation.navigation-next {
+.navigation.navigation-next.navigation-unique {
     display: none !important;
 }
