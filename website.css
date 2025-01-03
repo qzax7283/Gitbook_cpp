@@ -74,10 +74,12 @@
     font-size: 4rem;
   }
   .book.font-family-0 {
-    font-family: Georgia, serif;
+    font-family: "Times New Roman", Georgia, serif;
+    /*font-family: Georgia, serif;*/
   }
   .book.font-family-1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   }
   .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal {
     color: #704214;
