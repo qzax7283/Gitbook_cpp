@@ -2,14 +2,27 @@
     display: none !important;
 }
 
-.navPagesLinks {
-    color: #1c1f2b !important;
-    width: auto;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-areas: "previous next";
-    grid-template-columns: 1fr 1fr;
+.card {
+    color: rgb(36, 42, 49);
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+    align-items: center;
+    justify-self: stretch;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(28, 31, 43) !important;
+    border-image: initial;
     margin: 0px;
     padding: 0px;
-    grid-column-gap: 24px;
+    border-radius: 3px;
+    text-decoration: none;
+    page-break-inside: avoid;
+    transition: border 250ms ease 0s;
 }
