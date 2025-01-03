@@ -159,7 +159,7 @@
     color: #9dbed8;
     background: #2d3143;
     border-color: #2d3143;
-    line-height: 0.5px; /*revised*/
+    line-height: 2em; /*revised*/
   }
   .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal .highlight {
     background-color: #282a39;
