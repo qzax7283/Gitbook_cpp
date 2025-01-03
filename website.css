@@ -191,10 +191,11 @@
   }
   .book.color-theme-2 .book-header {
     color: #7e888b;
-    background: #C70039 ; /*my revise*/
+    background: transparent;
   }
   .book.color-theme-2 .book-header .btn {
-    color: #3b3f54;
+    color: #7e888b; /*revised*/
+    /*color: #3b3f54;*/
   }
   .book.color-theme-2 .book-header .btn:hover {
     color: #fffff5;
