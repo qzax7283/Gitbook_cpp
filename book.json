@@ -1,4 +1,7 @@
 {
+	"styles": {
+		"website": "add.css"
+	},
 	"plugins": [
 		"theme-comscore",
 		"-sharing",
