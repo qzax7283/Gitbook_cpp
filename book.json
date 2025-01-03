@@ -2,12 +2,12 @@
 	"plugins": [
 		"theme-comscore",
 		"-sharing",
-		"highlight",
+		"-highlight",
 		"ace"
 	],
 	"pluginsConfig": {
 		"fontSettings": {
-			"theme": "white",
+			"theme": "dark",
 			"family": "sans"
 		},
 		"theme-default": {
