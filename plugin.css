@@ -24,6 +24,7 @@
   border-radius: 3px;
   counter-reset: line;
   font-size: 15px;
+  line-height: 0.5; /* revised */
 }
 
 .code-wrapper pre > code > span.code-line:before {
@@ -34,5 +35,4 @@
   font-size: 12px;
   margin-right: 1.5em;
   width: 1em;
-  line-height: 0.5; /* revised */
 }
