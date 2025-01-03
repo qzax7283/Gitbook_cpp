@@ -28,6 +28,7 @@ jobs:
         run: |
           gitbook build
           cp SUMMARY.md _book
+          cp website.css _book/gitbook/gitbook-plugin-fontsettings
       - name: push _book to branch gh-pages
         env:
           TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
