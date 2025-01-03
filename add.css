@@ -1,3 +1,15 @@
 .gitbook-link {
     display: none !important;
 }
+
+.navPagesLinks {
+    color: #1c1f2b !important;
+    width: auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: "previous next";
+    grid-template-columns: 1fr 1fr;
+    margin: 0px;
+    padding: 0px;
+    grid-column-gap: 24px;
+}
