@@ -1,0 +1,28 @@
+.gitbook-link {
+    display: none !important;
+}
+
+.card {
+    color: rgb(36, 42, 49);
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    box-shadow: none !important;
+    align-items: center;
+    justify-self: stretch;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(28, 31, 43) !important;
+    border-image: initial;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 3px;
+    text-decoration: none;
+    page-break-inside: avoid;
+    transition: border 250ms ease 0s;
+}
