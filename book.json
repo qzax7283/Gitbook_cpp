@@ -21,7 +21,7 @@
 		"page-footer-ex": {
 			"copyright": "By qzax",
 			"markdown": false,
-			"update_label": "<i>updated</i>",
+			"update_label": "Last update: ",
 			"update_format": "YYYY-MM-DD HH:mm:ss"
 		}
 	}
