@@ -44,3 +44,12 @@
     color: #9daab6 !important;
     text-decoration: underline !important;
 }
+
+.book.color-theme-2 .book-header {
+    color: #7e888b;
+    background: transparent;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+}
