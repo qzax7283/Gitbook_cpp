@@ -1,6 +1,6 @@
 # Pointer
 
-## - [Introduction](./chapter_06_01.md) 
+* [Introduction to Pointer](./chapter_06_01.md) 
 ## - Introduction 
 
 這是第一章的內容
