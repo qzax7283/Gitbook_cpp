@@ -1,8 +1,7 @@
 .pg-emphasize {
-  /*border-radius: 2px;*/
+  border-radius: 2px;
   background: #FFFF88;
   padding:1px;
-  border-bottom: 3px, solid, rgba(255, 127, 80, 0.7);
 }
 
 .pg-emphasize.pg-emphasize-red {
@@ -14,6 +13,5 @@
 }
 
 .pg-emphasize.pg-emphasize-org {
-  background: transparent;
-  border-bottom: 3px, solid, rgba(255, 127, 80, 0.7);
+  background: rgba(255, 127, 80, 0.4);
 }
