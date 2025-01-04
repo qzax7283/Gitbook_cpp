@@ -56,6 +56,7 @@
     color: #9dbed8;
     background: #2d3143;
     border-color: #2d3143;
+    font-size: 15px !important;
     line-height: 20px !important;
     font-family: Consolas, 標楷體, DFKai-SB, "Microsoft JhengHei", Georgia, serif !important;
 }
