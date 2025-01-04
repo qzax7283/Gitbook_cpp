@@ -64,7 +64,8 @@
     margin: 0;
     margin-bottom: .85em;
     padding: 0 15px;
-    color: #858585;
+    color: #9dbed8 !important;
+    background: #e5e5e5 !important;
     border-left: 4px solid #e5e5e5;
     font-family: Consolas, 標楷體, DFKai-SB, "Microsoft JhengHei", Georgia, serif !important;
 }
