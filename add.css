@@ -64,10 +64,14 @@
     margin: 0;
     margin-bottom: .85em;
     padding: 0 15px;
-    font-size: 15.5px !important;
     color: #9dbed8 !important;
     background: rgba(229, 229, 229, 0.1) !important;
-    /*border-left: 4px solid #e5e5e5;*/
-    line-height: 20px !important;
+    border-left: none !important;
     font-family: Consolas, 標楷體, DFKai-SB, "Microsoft JhengHei", Georgia, serif !important;
+}
+
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal blockquote {
+    border-color: #373b4e;
+    font-size: 15.5px !important;
+    line-height: 20px !important;
 }
