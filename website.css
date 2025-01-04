@@ -74,11 +74,11 @@
     font-size: 4rem;
   }
   .book.font-family-0 {
-    font-family: "Times New Roman", Georgia, serif;
+    font-family: "Times New Roman", 微軟正黑體, "Microsoft JhengHei", Georgia, serif;
     /*font-family: Georgia, serif;*/
   }
   .book.font-family-1 {
-    font-family: 標楷體, DFKai-SB, Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Tahoma, 標楷體, DFKai-SB, "Helvetica Neue", Helvetica, Arial, sans-serif;
     /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   }
   .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal {
