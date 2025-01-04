@@ -48,13 +48,11 @@
 .book.color-theme-2 .book-header {
     color: #7e888b;
     background: transparent;
-    position: fixed !important;
+    position: sticky !important;
     top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
 }
-
+/*
 .book.with-summary .book-header {
     left: 300px !important;
     width: calc(100% - 300px) !important;
-}
+}*/
