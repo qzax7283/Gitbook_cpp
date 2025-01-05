@@ -21,3 +21,8 @@ int* p1;
 p1 = &num1;
 *p1 = 41;
 ```
+!FILENAME Output 1
+```
+Line 4: p1 = 0x61ff08 | num1 = 10
+Line 5: p1 = 0x61ff08 | num1 = 41
+```
