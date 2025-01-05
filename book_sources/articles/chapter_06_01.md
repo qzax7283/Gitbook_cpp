@@ -52,15 +52,22 @@
   Line 10: p1 = 0x61fefc , p2 = 0x61fee8
   ```
 - 指標變數本身佔有記憶體空間，也有一個地址，因此可以宣告<span style="color:#e5c07b">指向指標變數的指標變數</span>
+  
+  !FILENAME Example 2
+  ```cpp
+  int num1 = 10;
+  int *p1 = &num1; // 定義指標變數*p1，指向整數變數num的位址
+  int **p2 = &p1;  // 定義指標變數**p2，指向指標變數p1的位址
+  ```
 &nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
 
-  | A          | B          | C          | D          |
-  |:---        | ---        |:---:       | ---:       |
-  | XXXXXXXXXX | XXXXXXXXXX | XXXXXXXXXX | XXXXXXXXXX |
-  | 靠左       | 預設       | 置中       | 靠右       |
-  | A1         | B1         | C3         | D1         |
-  | `凸顯字`   | B2         | C2         | D2         |
-  | *斜體字*   | **粗體字** | <u>底線</u>| ~~刪除線~~ |
+  | A          | B          | C          | D          |  
+  |:---        | ---        |:---:       | ---:       |  
+  | XXXXXXXXXX | XXXXXXXXXX | XXXXXXXXXX | XXXXXXXXXX |  
+  | 靠左       | 預設       | 置中       | 靠右       |  
+  | A1         | B1         | C3         | D1         |  
+  | `凸顯字`   | B2         | C2         | D2         |  
+  | *斜體字*   | **粗體字** | <u>底線</u>| ~~刪除線~~ |  
