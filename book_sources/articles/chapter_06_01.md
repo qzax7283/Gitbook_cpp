@@ -28,4 +28,4 @@ Line 5: p1 = 0x61ff08 | num1 = 41
 ```
 
 > [!TIP]
-> An alert of type 'note' using global style 'callout'.
+> An alert of type 對於指標的加減運算.

@@ -84,3 +84,13 @@
 	line-height: inherit;
 	margin-bottom: 0px;
 }
+
+.alert.flat.tip {
+    color: #8841a0 !important;
+    background-color: #ebdef0 !important;
+    border-color: #ebdef0 !important;
+}
+
+.alert.flat.tip .title {
+    color: #4a235a !important;
+}
