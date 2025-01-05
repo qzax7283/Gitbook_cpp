@@ -5,3 +5,14 @@
 
   也就是說
   >陣列名稱[索引值] == *(陣列名稱 + 索引值)
+
+  >[!TIP]
+  >陣列的位址是唯讀的(常數)，因此不能改變其值
+
+  !FILENAME Example 1
+  ```cpp
+  int arr[2][3], num1 = 10;
+  int *p1 = &num1;
+
+  arr = p1; // invalid
+  ```
