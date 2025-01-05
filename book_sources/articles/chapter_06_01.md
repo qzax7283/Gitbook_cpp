@@ -73,5 +73,13 @@
 
 &nbsp;
 &nbsp;
-&nbsp;
-&nbsp;   
+  
+
+
+  | A          | B          | C          | D          |
+  |:---        | ---        |:---:       | ---:       |
+  | XXXXXXXXXX | XXXXXXXXXX | XXXXXXXXXX | XXXXXXXXXX |
+  | 靠左       | 預設       | 置中       | 靠右       |
+  | A1         | B1         | C3         | D1         |
+  | `凸顯字`   | B2         | C2         | D2         |
+  | *斜體字*   | **粗體字** | <u>底線</u>| ~~刪除線~~ |
