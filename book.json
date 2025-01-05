@@ -3,7 +3,6 @@
 		"website": "add.css"
 	},
 	"plugins": [
-		"theme-comscore",
 		"-sharing",
 		"highlight",
 		"code",
