@@ -8,8 +8,7 @@
 		"highlight",
 		"code",
 		"bottom-navigation",
-		"page-footer-ex",
-		"emphasize"
+		"page-footer-ex"
 	],
 	"pluginsConfig": {
 		"fontSettings": {
