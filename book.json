@@ -27,6 +27,7 @@
 			"update_format": "YYYY-MM-DD HH:mm:ss"
 		},
 		"flexible-alerts": {
+			"style": "flat",
 			"tip": {
 				"label": "Note"
 			},
