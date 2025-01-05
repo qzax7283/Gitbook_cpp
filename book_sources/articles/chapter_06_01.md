@@ -64,7 +64,7 @@
   Line 02: p1 = 0x61ff08 , *p1 = 10
   Line 03: p2 = 0x61ff04 , *p2 = 0x61ff08 , **p2 = 10 , &p2 = 0x61ff00
   ```
-  <img src="..\pictures\pic_0.png" alt="Description" height="90" width="auto">
+  <img src="..\pictures\pic_1.png" alt="Description" height="90" width="auto">
 
 &nbsp;
 &nbsp;
