@@ -26,3 +26,6 @@ p1 = &num1;
 Line 4: p1 = 0x61ff08 | num1 = 10
 Line 5: p1 = 0x61ff08 | num1 = 41
 ```
+
+> [!TIP]
+> An alert of type 'note' using global style 'callout'.

@@ -9,7 +9,8 @@
 		"code",
 		"bottom-navigation",
 		"page-footer-ex",
-		"codeblock-filename"
+		"codeblock-filename",
+		"flexible-alerts"
 	],
 	"pluginsConfig": {
 		"fontSettings": {
@@ -24,6 +25,17 @@
 			"markdown": false,
 			"update_label": "Last update: ",
 			"update_format": "YYYY-MM-DD HH:mm:ss"
+		},
+		"flexible-alerts": {
+			"tip": {
+				"label": "Note"
+			},
+			"warning": {
+				"label": "Warning"
+			},
+			"danger": {
+				"label": "Attention"
+			}
 		}
 	}
 }
