@@ -75,3 +75,12 @@
     font-size: 15.5px !important;
     line-height: 23px !important;
 }
+
+.code-filename{
+	background-color: #2d3143 !important;
+	display: inline-block;
+	padding: 2px 8px;
+	font-size: small;
+	line-height: inherit;
+	margin-bottom: 0px;
+}
