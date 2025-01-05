@@ -62,19 +62,17 @@
   !FILENAME Output 3
   ```
   Line 02: p1 = 0x61ff08 , *p1 = 10
-  Line 03: p2 = 0x61ff04 , *p2 = 0x61ff08 , **p2 = 10
+  Line 03: p2 = 0x61ff04 , *p2 = 0x61ff08 , **p2 = 10 , &p2 = 0x61ff00
   ```
 
+  變數名稱 | 儲存值   | 記憶體位址          
+  :---:   | :---:    |:---:       
+   num    | 10       | 61ff08
+   p1     | 61ff08   | 61ff04       
+   p2     | 61ff04   | 61ff00          
+
 
 &nbsp;
 &nbsp;
 &nbsp;
-&nbsp;
-
-   A          | B          | C          | D          
-  :---        | ---        |:---:       | ---:       
-   XXXXXXXXXX | XXXXXXXXXX | XXXXXXXXXX | XXXXXXXXXX 
-   靠左       | 預設       | 置中       | 靠右       
-   A1         | B1         | C3         | D1         
-   `凸顯字`   | B2         | C2         | D2         
-   *斜體字*   | **粗體字** | <u>底線</u>| ~~刪除線~~ 
+&nbsp;   
