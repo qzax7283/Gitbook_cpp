@@ -17,7 +17,7 @@
 
   cout << ptr1 << endl;
   cout << ptr2 << endl;
-  cout << *ptr1+*ptr2 << endl;
+  cout << *ptr1 + *ptr2 << endl;
 
   delete ptr1;
   delete ptr2;
@@ -26,11 +26,35 @@
   ptr1 = NULL; 
   ptr2 = NULL;
   ```
-  !FILENAME Output 2
+  !FILENAME Output 1
   ```
   Line 04: 0x10b1858
   Line 05: 0x10b1868
   Line 06: 51
   ```
 
-  
+- 動態配置及釋放一維陣列的方式如下，此時指標變數指向陣列第一個元素的位址
+  >資料型態 *指標變數 = new 資料型態[元素個數];
+  >delete [] 指標變數;
+
+!FILENAME Example 2
+```cpp
+int *ptr = new int[3];
+
+ptr[0] = 2;
+ptr[1] = 3;
+ptr[2] = 5;
+
+for(int i = 0; i < 3; i++){
+    cout << *(ptr+i) << ' ' << ptr+i << endl;
+}
+
+delete [] ptr;
+ptr = NULL;
+```
+!FILENAME Output 2
+```
+Line 08: 2 0x10b1858
+         3 0x10b185c
+         5 0x10b1860
+```
