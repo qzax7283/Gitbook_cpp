@@ -58,6 +58,13 @@
   cout << (int *)p1 << endl;
   cout << p1 << endl;
   ```
+  !FILENAME Output 3
+  ```
+  Line 04: 0x61ff05
+  Line 05: Almond
+  Line 10: 0x61ff07
+  Line 11: mond
+  ```
   
 
 &nbsp;
