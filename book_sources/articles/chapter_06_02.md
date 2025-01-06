@@ -65,7 +65,11 @@
   Line 10: 0x61ff07
   Line 11: mond
   ```
-  
+- 指標也可像其他變數一樣，宣告為陣列的形式，稱為<span style="color:#e5c07b">指標陣列</span>
+  >資料型態 *陣列名稱[陣列大小];
+
+  而字串陣列可用二維字元陣列或是<span style="color:#e5c07b">一維字串指標陣列</span>儲存
+
 
 &nbsp;
 &nbsp;
