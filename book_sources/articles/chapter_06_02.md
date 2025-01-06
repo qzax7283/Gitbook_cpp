@@ -70,9 +70,27 @@
 
   而字串陣列可用二維字元陣列或是<span style="color:#e5c07b">一維字串指標陣列</span>儲存
 
+  !FILENAME Example 4
+  ```cpp
+  const char *p1[4] = {"Almond","Breadfruit","Citron","Dragon fruit"};
+  char arr[4][13] = {"Almond","Breadfruit","Citron","Dragon fruit"};
 
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+  for(int i = 0; i < 4; i++){
+        cout << (int *)p1[i] << ' ' <<p1[i] << endl;
+  }
+  for(int i = 0; i < 4; i++){
+        cout << (int *)arr[i] << ' ' <<arr[i] << endl;
+  }
+  ```
+  !FILENAME Output 4
+  ```
+  Line 05: 0x605065 Almond
+           0x40506c Breadfruit
+           0x405077 Citron
+           0x40507e Dragon fruit
+
+  Line 08: 0x61fec4 Almond
+           0x61fed1 Breadfruit
+           0x61fede Citron
+           0x61feeb Dragon fruit
+  ```
