@@ -6,4 +6,31 @@
 - 當配置的記憶體已不再使用時，必須以delete運算子來釋放該記憶體空間
   >delete 指標名稱;
 
+  &nbsp;
+  >[!TIP]
+  >若指向動態配置空間的指標在未釋放該位址空間前，又指向別的記憶體空間，則原本所指向的空間將無法被釋放，造成記憶體缺口
+
+  !FILENAME Example 1
+  ```cpp
+  int *ptr1 = new int(10);
+  int *ptr2 = new int(41);
+
+  cout << ptr1 << endl;
+  cout << ptr2 << endl;
+  cout << *ptr1+*ptr2 << endl;
+
+  delete ptr1;
+  delete ptr2;
+
+  // 使用delete釋放動態陣列後，最好將此指標變數指向NULL
+  ptr1 = NULL; 
+  ptr2 = NULL;
+  ```
+  !FILENAME Output 2
+  ```
+  Line 04: 0x10b1858
+  Line 05: 0x10b1868
+  Line 06: 51
+  ```
+
   
