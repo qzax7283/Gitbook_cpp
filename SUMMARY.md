@@ -6,3 +6,4 @@
 * [Pointer](./book_sources/articles/chapter_06_00.md)
     * [Introduction to Pointer](./book_sources/articles/chapter_06_01.md)
     * [Pointer and Array](./book_sources/articles/chapter_06_02.md)
+    * [Dynamic Memory Allocation](./book_sources/articles/chapter_06_03.md)

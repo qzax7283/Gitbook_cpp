@@ -4,6 +4,6 @@
 &nbsp;
 * [Pointer and Array](./chapter_06_02.md)
 &nbsp;
-* Dynamic Memory Allocation
+* [Dynamic Memory Allocation](./chapter_06_03.md)
 &nbsp;
 * Introduction to Reference

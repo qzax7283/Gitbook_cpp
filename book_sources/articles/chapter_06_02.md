@@ -76,10 +76,10 @@
   char arr[4][13] = {"Almond","Breadfruit","Citron","Dragon fruit"};
 
   for(int i = 0; i < 4; i++){
-        cout << (int *)p1[i] << ' ' <<p1[i] << endl;
+        cout << (int *)p1[i] << ' ' << p1[i] << endl;
   }
   for(int i = 0; i < 4; i++){
-        cout << (int *)arr[i] << ' ' <<arr[i] << endl;
+        cout << (int *)arr[i] << ' ' << arr[i] << endl;
   }
   ```
   !FILENAME Output 4
