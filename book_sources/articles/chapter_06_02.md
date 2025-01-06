@@ -41,7 +41,24 @@
 
   *(*(arr+0)+1) = 2 , *(*(arr+1)+2) = 6 , *(p1+(1*3)+1) = 5
   ```
+- 字串是由字元陣列組成，可以透過指標來宣告及操作
+  >**const** char *指標變數 = "字串內容"; // 加上const才不會有warning
 
+  !FILENAME Example 3
+  ```cpp
+  char arr[] = "Almond";
+  char *p1 = arr;
+
+  cout << (int *)p1 << endl; //輸出p1所指向的位址
+  cout << p1 << endl;
+
+  arr += 2; // invalid, arr為指標常數
+  p1 += 2;
+
+  cout << (int *)p1 << endl;
+  cout << p1 << endl;
+  ```
+  
 
 &nbsp;
 &nbsp;
