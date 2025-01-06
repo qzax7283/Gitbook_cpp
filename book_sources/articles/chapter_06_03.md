@@ -37,24 +37,24 @@
   >資料型態 *指標變數 = new 資料型態[元素個數];
   >delete [] 指標變數;
 
-!FILENAME Example 2
-```cpp
-int *ptr = new int[3];
+  !FILENAME Example 2
+  ```cpp
+  int *ptr = new int[3];
 
-ptr[0] = 2;
-ptr[1] = 3;
-ptr[2] = 5;
+  ptr[0] = 2;
+  ptr[1] = 3;
+  ptr[2] = 5;
 
-for(int i = 0; i < 3; i++){
-    cout << *(ptr+i) << ' ' << ptr+i << endl;
-}
+  for(int i = 0; i < 3; i++){
+      cout << *(ptr+i) << ' ' << ptr+i << endl;
+  }
 
-delete [] ptr;
-ptr = NULL;
-```
-!FILENAME Output 2
-```
-Line 08: 2 0x10b1858
-         3 0x10b185c
-         5 0x10b1860
-```
+  delete [] ptr;
+  ptr = NULL;
+  ```
+  !FILENAME Output 2
+  ```
+  Line 08: 2 0x10b1858
+          3 0x10b185c
+          5 0x10b1860
+  ```

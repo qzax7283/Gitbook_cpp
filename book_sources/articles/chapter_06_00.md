@@ -6,4 +6,4 @@
 &nbsp;
 * [Dynamic Memory Allocation](./chapter_06_03.md)
 &nbsp;
-* Introduction to Reference
+* [Introduction to Reference](./chapter_06_04.md)
