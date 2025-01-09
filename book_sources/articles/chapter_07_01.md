@@ -33,6 +33,7 @@
 &nbsp;2. <span style="color:#e5c07b">實際參數(Actual Parameter)</span>：實際呼叫函數時所提供的參數  
 
 - 對於傳遞參數的方式，可以根據傳遞和接收的是參數數值或參數位址分為三種  
-  #### 傳值呼叫(call by value)
+&nbsp;**1.傳值呼叫(call by value)**  
+  將實際參數的數值<span style="color:#e5c07b">複製一份</span>給函數中相對應的形式參數，形式參數是額外配置的記憶體，因此在函數內的形式參數執行完畢時，並不會更動到原本主程式中呼叫的內容變數
 
 
