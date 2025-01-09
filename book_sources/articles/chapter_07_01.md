@@ -35,15 +35,19 @@
 - 對於傳遞參數的方式，可以根據傳遞和接收的是參數數值或參數位址分為三種  
   ##### <span style="color:#e5c07b">1. 傳值呼叫(call by value)</span>
   將實際參數的數值<span style="color:#e5c07b">複製一份</span>給函數中相對應的形式參數，形式參數是額外配置的記憶體，因此在函數內的形式參數執行完畢時，並不會更動到原本主程式中呼叫的內容變數
-  >回傳資料型態 函數名稱(資料型態 參數1, 資料型態 參數2, ...); (function declaration)
-  >...
+  >回傳資料型態 函數名稱(資料型態 參數1, 資料型態 參數2, ...); (function declaration)  
+  >...  
   >函數名稱(引數1, 引數2, ...); (function call)
 
   ##### <span style="color:#e5c07b">2. 傳址呼叫(call by address)</span>
   將實際參數的<span style="color:#e5c07b">位址</span>直接傳遞給所對應的形式參數，也就是配置<span style="color:#e5c07b">指標變數的形式參數</span>來存放傳入的變數位址，待函數執行完畢後，將指標指向實際參數的變數位址，更改變數內容
-  >回傳資料型態 函數名稱(資料型態 *參數1, 資料型態 *參數2, ...); (function declaration)
-  >...
+  >回傳資料型態 函數名稱(資料型態 *參數1, 資料型態 *參數2, ...); (function declaration)  
+  >...  
   >函數名稱(&引數1, &引數2, ...); (function call)
 
-
+  ##### <span style="color:#e5c07b">3. 傳參考呼叫(call by reference)</span>
+  形式變數不會另外再配置記憶體存放實際參數傳入的位址，而是直接把形式參數作為實際參數的一個別名
+  >回傳資料型態 函數名稱(資料型態 &參數1, 資料型態 &參數2, ...); (function declaration)  
+  >...  
+  >函數名稱(引數1, 引數2, ...); (function call)
 
