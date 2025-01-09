@@ -81,9 +81,15 @@
   }
   ```
   !FILENAME Output 1
-  ```cpp
-  int
+  ```
+  Line 06: a = 10 , b = 41 , &a = 0x61ff0c , &b = 0x61ff08
+  Line 15: a = 10 , b = 41 , &a = 0x61fef0 , &b = 0x61fef4
+  Line 08: a = 10 , b = 41 , &a = 0x61ff0c , &b = 0x61ff08
 
+  Line 19: a = 0x61ff0c , b = 0x61ff08 , *a = 10 , *b = 41
 
+  Line 09: a = 41 , b = 10 , &a = 0x61ff0c , &b = 0x61ff08
+  Line 23: a = 41 , b = 10 , &a = 0x61ff0c , &b = 0x61ff08
+  Line 10: a = 10 , b = 41 , &a = 0x61ff0c , &b = 0x61ff08
   ```
 
