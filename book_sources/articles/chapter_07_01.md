@@ -51,3 +51,39 @@
   >...  
   >函數名稱(引數1, 引數2, ...); (function call)
 
+  !FILENAME Example 1
+  ```cpp
+  void func_cbv(int a, int b);
+  void func_cba(int *a, int *b);
+  void func_cbr(int &a, int &b);
+
+  int main(){
+      int a = 10, b = 41;
+
+      func_cbv(a, b);   // call by value
+      func_cba(&a, &b); // call by address
+      func_cbr(a, b);   // call by reference
+      
+      return 0;
+  }
+
+  void func_cbv(int a, int b){
+    a = 41;
+    b = 10;
+  }
+  void func_cba(int *a, int *b){
+    *a = 41;
+    *b = 10;
+  }
+  void func_cbr(int &a, int &b){
+    a = 10;
+    b = 41;
+  }
+  ```
+  !FILENAME Output 1
+  ```cpp
+  int
+
+
+  ```
+
