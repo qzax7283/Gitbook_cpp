@@ -41,12 +41,12 @@
 
   ##### <span style="color:#e5c07b">2. 傳址呼叫(call by address)</span>
   將實際參數的<span style="color:#e5c07b">位址</span>直接傳遞給所對應的形式參數，也就是配置<span style="color:#e5c07b">指標變數的形式參數</span>來存放傳入的變數位址，待函數執行完畢後，將指標指向實際參數的變數位址，更改變數內容
-  >回傳資料型態 函數名稱(資料型態 *參數1, 資料型態 *參數2, ...); (function declaration)  
+  >回傳資料型態 函數名稱(資料型態 \*參數1, 資料型態 \*參數2, ...); (function declaration)  
   >...  
   >函數名稱(&引數1, &引數2, ...); (function call)
 
   ##### <span style="color:#e5c07b">3. 傳參考呼叫(call by reference)</span>
-  形式變數不會另外再配置記憶體存放實際參數傳入的位址，而是直接把形式參數作為實際參數的一個別名
+  形式變數不會另外再配置記憶體存放實際參數傳入的位址，而是直接把形式參數作為實際參數的一個<span style="color:#e5c07b">別名</span>
   >回傳資料型態 函數名稱(資料型態 &參數1, 資料型態 &參數2, ...); (function declaration)  
   >...  
   >函數名稱(引數1, 引數2, ...); (function call)
