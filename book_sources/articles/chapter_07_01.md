@@ -22,7 +22,7 @@
 
   若函數不需要傳入參數
   >函數名稱();  
-  >或  
+  >or   
   >函數名稱(void);
 
   若函數有回傳值
@@ -36,8 +36,14 @@
   ##### <span style="color:#e5c07b">1. 傳值呼叫(call by value)</span>
   將實際參數的數值<span style="color:#e5c07b">複製一份</span>給函數中相對應的形式參數，形式參數是額外配置的記憶體，因此在函數內的形式參數執行完畢時，並不會更動到原本主程式中呼叫的內容變數
   >回傳資料型態 函數名稱(資料型態 參數1, 資料型態 參數2, ...); (function declaration)
-
-  &nbsp;
+  >...
   >函數名稱(引數1, 引數2, ...); (function call)
+
+  ##### <span style="color:#e5c07b">2. 傳址呼叫(call by address)</span>
+  將實際參數的<span style="color:#e5c07b">位址</span>直接傳遞給所對應的形式參數，也就是配置<span style="color:#e5c07b">指標變數的形式參數</span>來存放傳入的變數位址，待函數執行完畢後，將指標指向實際參數的變數位址，更改變數內容
+  >回傳資料型態 函數名稱(資料型態 *參數1, 資料型態 *參數2, ...); (function declaration)
+  >...
+  >函數名稱(&引數1, &引數2, ...); (function call)
+
 
 
