@@ -28,6 +28,11 @@
   若函數有回傳值
   >變數 = 函數名稱(引數1, 引數2, ...);
 
-- 函數參數的種類分為以下兩種：
+- 函數參數的種類分為以下兩種：  
 &nbsp;1. <span style="color:#e5c07b">形式參數(Formal Parameter)</span>：在函數定義標頭中所宣告的參數  
-&nbsp;2. <span style="color:#e5c07b">實際參數(Actual Parameter)</span>：實際呼叫函數時所提供的參數
+&nbsp;2. <span style="color:#e5c07b">實際參數(Actual Parameter)</span>：實際呼叫函數時所提供的參數  
+
+- 對於傳遞參數的方式，可以根據傳遞和接收的是參數數值或參數位址分為三種  
+  #### 傳值呼叫(call by value)
+
+
