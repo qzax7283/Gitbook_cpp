@@ -1,6 +1,6 @@
 # Functions
 
-* [Function Declaration and Parameters Passing](./chapter_07_01.md) 
+* [Parameter Passing of Functions](./chapter_07_01.md) 
 &nbsp;
 * [.](./chapter_06_02.md)
 &nbsp;
