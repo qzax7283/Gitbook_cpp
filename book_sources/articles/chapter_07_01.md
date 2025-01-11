@@ -105,9 +105,43 @@
   一維陣列：
   >回傳資料型態 函數名稱(資料型態 *陣列名稱, ...);  
   >or  
-  >回傳資料型態 函數名稱(資料型態 陣列名稱[陣列大小], ...);  
+  >回傳資料型態 函數名稱(資料型態 陣列名稱[陣列大小], ...);
+  
   二維陣列：
   >回傳資料型態 函數名稱(資料型態 陣列名稱[列數][行數], ...);
+
   函數呼叫方式
   >函數名稱(陣列名稱);
 
+  !FILENAME Example 2
+  ```cpp
+  void func(int arr[2][3]);
+
+  int main(){
+      int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};
+
+      cout << arr <<endl;
+
+      func(arr);
+
+      for(int i = 0; i < 6; i++){
+          cout << *(&arr[0][0]+i) << ' ';
+      }   
+
+      return 0;
+  }
+  void func(int arr[2][3]){
+      cout << arr <<endl;
+
+      for(int i = 0; i < 2; i++){
+          for(int j = 0; j < 3; j++){
+              arr[i][j] += 1;
+          }
+      }
+  }
+  !FILENAME Output 2
+  ```
+  Line 06: 0x61fef4
+  Line 17: 0x61fef4
+  Line 11: 2 3 4 5 6 7
+  ```
