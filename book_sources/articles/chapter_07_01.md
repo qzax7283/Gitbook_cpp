@@ -184,7 +184,6 @@ char* func(char* str1, char* str2){
     return str1;
 }
 ```
-```
 !FILENAME Output 3
 ```
 Line 07: 0x61fea8
