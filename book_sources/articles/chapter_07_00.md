@@ -4,6 +4,6 @@
 &nbsp;
 * [Pointer of Functions](./chapter_07_02.md)
 &nbsp;
-* [.](./chapter_06_03.md)
+* [Variable Type Modifiers](./chapter_07_03.md)
 &nbsp;
 * [.](./chapter_06_04.md)
