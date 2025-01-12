@@ -69,9 +69,15 @@
   int sub(int a, int b){
       return (a - b);
   }
+  int math(int a, int b, int (*ptr)(int c, int d)){
+      return (*ptr)(a, b); // 注意參數的傳遞
+  }
   ```
   !FILENAME Output 3
   ```
-  Line 09: 51
-  Line 11: 31
+  Line 07: 51
+  Line 08: 31
   ``` 
+
+- 函數指標可以宣告成陣列型態，透過索引值來存取，原型宣告方式
+  >回傳資料型態 (*函數指標名稱[])(資料型態 參數1, ...);
