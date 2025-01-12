@@ -50,19 +50,16 @@
 - 可以將函數指標用來作為<span style="color:#e5c07b">另一個函數的參數</span>(參數型函數指標)，此時須將函數指標直接宣告於函數的參數列
   >回傳資料型態 函數名稱(資料型態 參數1, ..., 回傳資料型態 (*函數指標名稱)(資料型態 參數1, ...));
 
-  !FILENAME Example 2
+  !FILENAME Example 3
   ```cpp
   int add(int a, int b);
   int sub(int a, int b);
+  int math(int a, int b, int (*ptr)(int c, int d)); // ptr為參數型函數指標
 
   int main(){
 
-      int (*ptr)(int a, int b);
-
-      ptr = add;
-      cout << (*ptr)(41, 10) << endl; // 以*取值(*應該可省略)
-      ptr = sub;
-      cout << (*ptr)(41, 10) << endl;
+      cout << math(41, 10, add) << endl;
+      cout << math(41, 10, sub) << endl;
 
       return 0;
   }
@@ -73,8 +70,11 @@
   int sub(int a, int b){
       return (a - b);
   }
+  int math(int a, int b, int (*ptr)(int c, int d)){
+      return (*ptr)(a, b); // 注意參數的傳遞
+  }
   ```
-  !FILENAME Output 2
+  !FILENAME Output 3
   ```
   Line 09: 51
   Line 11: 31
