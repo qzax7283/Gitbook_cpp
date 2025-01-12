@@ -54,6 +54,7 @@
   ```cpp
   int add(int a, int b);
   int sub(int a, int b);
+  int math(int a, int b, int (*ptr)(int c, int d));
 
   int main(){
 
@@ -68,6 +69,9 @@
   }
   int sub(int a, int b){
       return (a - b);
+  }
+  int math(int a, int b, int (*ptr)(int c, int d)){
+    return (*ptr)(a, b); // 注意參數的傳遞
   }
   ```
   !FILENAME Output 3
