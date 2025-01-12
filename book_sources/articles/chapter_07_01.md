@@ -150,44 +150,44 @@
 - 指標也可做為函數的回傳值，原型宣告方式
   >回傳資料型態 *函數名稱(資料型態 參數1, 資料型態 參數2, ...);
 
-!FILENAME Example 3
-```cpp
-char* func(char* str1, char* str2); // call by address
+  !FILENAME Example 3
+  ```cpp
+  char* func(char* str1, char* str2); // call by address
 
-int main(){
-    char str1[100] = {"Hello "};
-    char str2[100] = {"World"};
+  int main(){
+      char str1[100] = {"Hello "};
+      char str2[100] = {"World"};
 
-    cout << (int *)str1 << endl;
+      cout << (int *)str1 << endl;
 
-    char *str3 = func(str1, str2);
+      char *str3 = func(str1, str2);
 
-    cout << str3 << endl;
-    cout << (int *)str3 << endl;
+      cout << str3 << endl;
+      cout << (int *)str3 << endl;
 
-    return 0;
-}
+      return 0;
+  }
 
-char* func(char* str1, char* str2){
-    int i = 0, j = 0;
-    while(*(str1+i) != '\0'){
-        i++;
-    }
-    while(*(str2+j) != '\0'){
-        *(str1+i+j) = *(str2+j);
-        j++;
-    }
-    *(str1+i+j) = '\0';
+  char* func(char* str1, char* str2){
+      int i = 0, j = 0;
+      while(*(str1+i) != '\0'){
+          i++;
+      }
+      while(*(str2+j) != '\0'){
+          *(str1+i+j) = *(str2+j);
+          j++;
+      }
+      *(str1+i+j) = '\0';
 
-    cout << (int *)str1 << endl;
+      cout << (int *)str1 << endl;
 
-    return str1;
-}
-```
-!FILENAME Output 3
-```
-Line 07: 0x61fea8
-Line 28: 0x61fea8
-Line 11: Hello World
-Line 12: 0x61fea8
-```
+      return str1;
+  }
+  ```
+  !FILENAME Output 3
+  ```
+  Line 07: 0x61fea8
+  Line 28: 0x61fea8
+  Line 11: Hello World
+  Line 12: 0x61fea8
+  ```
