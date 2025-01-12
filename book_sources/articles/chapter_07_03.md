@@ -20,3 +20,44 @@
 - 使用CPU的暫存器來儲存變數，加快變數存取的效率
   >register 資料型態 變數名稱;
 
+!FILENAME Example 1
+```cpp
+#include <iostream>
+#include "Example 2.cpp"
+
+using namespace std;
+
+int func2(int a);
+
+int x; // 全域變數
+
+int main(){
+
+    int a = 41; // 自動變數
+
+    func1();
+    cout << x << endl;
+    cout << func2(a) << endl;
+    cout << func2(a) << endl;
+
+    return 0;
+}
+int func2(int a){
+    static int sum = 10; // 靜態區域變數
+
+    sum += a;
+    return sum;
+}
+```
+!FILENAME Example 2
+```cpp
+#include <iostream>
+
+using namespace std;
+
+extern int x; // 外部變數
+
+void func1(){
+    x = 1;
+}
+```
