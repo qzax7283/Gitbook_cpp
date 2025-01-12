@@ -51,7 +51,7 @@
   >回傳資料型態 函數名稱(資料型態 參數1, ..., 回傳資料型態 (*函數指標名稱)(資料型態 參數1, ...));
 
   !FILENAME Example 3
-  ```cpp
+  ```c
   int add(int a, int b);
   int sub(int a, int b);
   int math(int a, int b, int (*ptr)(int c, int d)); // ptr為參數型函數指標
