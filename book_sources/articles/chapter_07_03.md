@@ -10,7 +10,8 @@
 
 ##### <span style="color:#e5c07b">3. 外部變數</span>
 - 外部變數是指宣告在函數區塊外的變數，也就是全域變數，會占用固定的記憶體空間。若無設定初始值，系統會設定為0。定義後以下所有的函數都可使用該變數，待程式執行結束後才將記憶體釋放。  
-  extern修飾詞的功能可將宣告在函數區塊後方的外部變數<span style="color:#e5c07b">引用到函數內使用</span>
+ 
+- extern修飾詞的功能可將宣告在函數區塊後方的外部變數<span style="color:#e5c07b">引用到函數內使用</span>
   >extern 資料型態 變數名稱;
 
 ##### <span style="color:#e5c07b">4. 靜態外部變數</span>
@@ -61,3 +62,9 @@ void func1(){
     x = 1;
 }
 ```
+!FILENAME Output 1
+```
+Line 15: 1
+Line 16: 51
+Line 17: 92
+``` 
