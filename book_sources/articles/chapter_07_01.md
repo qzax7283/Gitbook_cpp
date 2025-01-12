@@ -184,3 +184,11 @@ char* func(char* str1, char* str2){
     return str1;
 }
 ```
+```
+!FILENAME Output 3
+```
+Line 07: 0x61fea8
+Line 28: 0x61fea8
+Line 11: Hello World
+Line 12: 0x61fea8
+```
