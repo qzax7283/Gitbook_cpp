@@ -74,4 +74,8 @@
       return (*ptr)(a, b); // 注意參數的傳遞
   }
   ```
-
+  !FILENAME Output 3
+  ```
+  Line 07: 51
+  Line 08: 31
+  ```
