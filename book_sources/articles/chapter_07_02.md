@@ -82,3 +82,36 @@
 
 - 函數指標可以宣告成陣列型態，透過索引值來存取，原型宣告方式
   >回傳資料型態 (*函數指標名稱[])(資料型態 參數1, ...);
+
+  !FILENAME Example 4
+  ```cpp
+  int add(int a, int b);
+  int sub(int a, int b);
+  int mul(int a, int b);
+  int (*math[])(int a, int b) = {add, sub, mul};
+
+  int main(){
+
+      for(int i = 0; i < 3; i++){
+          cout << math[i](41,10) << endl;
+      }
+
+      return 0;
+  }
+
+  int add(int a, int b){
+      return (a + b);
+  }
+  int sub(int a, int b){
+      return (a - b);
+  }
+  int mul(int a, int b){
+      return (a * b);
+  }
+  ```
+  !FILENAME Output 4
+  ```
+  Line 09: 51
+           31
+           410
+  ``` 
