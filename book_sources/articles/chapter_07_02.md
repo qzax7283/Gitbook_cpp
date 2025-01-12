@@ -54,7 +54,6 @@
   ```cpp
   int add(int a, int b);
   int sub(int a, int b);
-  int math(int a, int b, int (*ptr)(int c, int d));
 
   int main(){
 
