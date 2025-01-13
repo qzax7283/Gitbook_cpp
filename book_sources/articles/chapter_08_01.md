@@ -38,14 +38,17 @@
   struct circle{
       int r;
       double area;
+      char name[10];
   };
   int main(){
 
-      struct circle c1;
+      struct circle c1 = {0, 0, "circle_1"}; // 可指定初始值
       struct circle *ptr = &c1;
 
       c1.r = 3;
       c1.area = 3.14 * c1.r * c1.r;
+
+      cout << c1.name << endl;
 
       cout << ptr -> r << endl;
       cout << (*ptr).r << endl;
@@ -58,8 +61,9 @@
   ```
   !FILENAME Output 1
   ```
-  Line 13: 3
-  Line 14: 3
-  Line 16: 28.26
-  Line 17: 28.26
+  Line 14: circle_1
+  Line 16: 3
+  Line 17: 3
+  Line 19: 28.26
+  Line 20: 28.26
   ```
