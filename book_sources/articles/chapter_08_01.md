@@ -86,3 +86,48 @@
   >回傳資料型態 函數名稱(struct 結構型態名稱 &結構變數); (function declaration)  
   >...  
   >函數名稱(結構變數); (function call)
+
+  !FILENAME Example 2
+  ```cpp
+  struct circle{
+      const char name[10];
+      int r;
+      double area;
+  };
+
+  void func_cbv(struct circle c);
+  void func_cba(struct circle *c);
+  void func_cbr(struct circle &c);
+
+  int main(){
+
+      struct circle c[3] = { {"circle_1", 3, 0.0},
+                            {"circle_2", 3, 0.0},
+                            {"circle_3", 3, 0.0} };
+
+      func_cbv(c[0]);
+      func_cba(&c[1]);
+      func_cbr(c[2]);
+
+      cout << c[0].area << endl;
+      cout << c[1].area << endl;
+      cout << c[2].area << endl;
+
+      return 0;
+  }
+  void func_cbv(struct circle c){
+      c.area = 3.14 * c.r * c.r;
+  }
+  void func_cba(struct circle *c){
+      (*c).area = 3.14 * (*c).r * (*c).r;
+  }
+  void func_cbr(struct circle &c){
+      c.area = 3.14 * c.r * c.r;
+  }
+  ```
+  !FILENAME Output 2
+  ```
+  Line 20: 0
+  Line 21: 28.26
+  Line 22: 28.26
+  ```
