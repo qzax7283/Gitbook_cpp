@@ -11,3 +11,4 @@
     * [Pointer of Functions](./book_sources/articles/chapter_07_02.md)
     * [Variable Type Modifiers](./book_sources/articles/chapter_07_03.md)
     * [Function Overloading](./book_sources/articles/chapter_07_04.md)
+* [Self-defined Data Types](./book_sources/articles/chapter_08_00.md)
