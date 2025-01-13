@@ -14,7 +14,8 @@
   >&nbsp;&nbsp;&nbsp;&nbsp;資料型態 結構成員2;  
   >&nbsp;&nbsp;&nbsp;&nbsp;...  
   >}結構變數; // 宣告後直接定義  
-  >or  
+  
+  或
   >struct 結構型態名稱 結構變數;
 
 - 結構資料的存取
@@ -28,5 +29,37 @@
 
 - 結構指標的資料存取方法
   >結構指標名稱 -> 結構成員名稱;
+
   或
   >(*結構指標名稱).結構成員名稱;
+
+  !FILENAME Example 1
+  ```cpp
+  struct circle{
+      int r;
+      double area;
+  };
+  int main(){
+
+      struct circle c1;
+      struct circle *ptr = &c1;
+
+      c1.r = 3;
+      c1.area = 3.14 * c1.r * c1.r;
+
+      cout << ptr -> r << endl;
+      cout << (*ptr).r << endl;
+
+      cout << ptr -> area << endl;
+      cout << (*ptr).area << endl;
+
+      return 0;
+  }
+  ```
+  !FILENAME Output 1
+  ```
+  Line 13: 3
+  Line 14: 3
+  Line 16: 28.26
+  Line 17: 28.26
+  ```
