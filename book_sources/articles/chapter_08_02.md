@@ -17,4 +17,36 @@
 
   &nbsp;
   >[!TIP]
-  >由於結構指標陣列中存放的是位址，因此存取其指向的結構成員位置方式為{arr[i] -> member}而非{*arr[i].member}或是{(arr+i) -> member} 
+  >由於結構指標陣列中存放的是位址，因此存取其指向的結構成員位置方式為  
+  >{arr[i] -> member}而非{*arr[i].member}或是{(arr+i) -> member} 
+
+  !FILENAME Example 1
+  ```cpp
+  struct fruit{
+    char name[15];
+    int sales[3]; // 結構的陣列成員
+  };
+  // 結構陣列
+  struct fruit var[4] = { {"almond", 43, 47, 27},
+                          {"breadfruit", 12, 17, 16},
+                          {"citron", 22, 19, 35},
+                          {"dragon fruit", 11, 14, 13} }; 
+
+  struct fruit *ptr[4]; // 結構指標陣列
+
+  for(int i = 0; i < 4; i++){
+      ptr[i] = &var[i];
+  }
+
+  cout << var[1].name << endl;
+  cout << var[3].sales[1] << endl;
+  cout << (var + 2) -> name << endl;
+  cout << ptr[0] -> sales[2] << endl;
+  ```
+  !FILENAME Output 1
+  ```
+  Line 17: breadfruit
+  Line 18: 14
+  Line 19: citron
+  Line 20: 27
+  ```
