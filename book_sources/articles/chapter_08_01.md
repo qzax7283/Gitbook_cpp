@@ -127,7 +127,7 @@
   ```
   !FILENAME Output 2
   ```
-  Line 20: 0
-  Line 21: 28.26
+  Line 21: 0
   Line 22: 28.26
+  Line 23: 28.26
   ```
