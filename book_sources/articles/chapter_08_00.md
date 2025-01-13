@@ -4,6 +4,6 @@
 &nbsp;
 * [Structure Array](./chapter_08_02.md)
 &nbsp;
-* [.](./chapter_07_03.md)
+* [Nested Structure](./chapter_08_03.md)
 &nbsp;
 * [.](./chapter_07_04.md)

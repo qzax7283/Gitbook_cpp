@@ -14,3 +14,4 @@
 * [Self-defined Data Types](./book_sources/articles/chapter_08_00.md)
     * [Structure](./book_sources/articles/chapter_08_01.md)
     * [Structure Array](./book_sources/articles/chapter_08_02.md)
+    * [Nested Structure](./book_sources/articles/chapter_08_03.md)
