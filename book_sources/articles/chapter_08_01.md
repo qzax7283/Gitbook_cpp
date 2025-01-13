@@ -67,3 +67,22 @@
   Line 19: 28.26
   Line 20: 28.26
   ```
+
+- 若要在函數中傳遞結構型態，必須在<span style="color:#e5c07b">全域範圍</span>內事先宣告。而函數中結構資料的傳遞有三種方式
+  ##### <span style="color:#e5c07b">1. 結構傳值呼叫</span>
+  將整個結構變數<span style="color:#e5c07b">複製</span>到函數裡，若在函數中更改了傳來的參數值，則main中結構變數的值不會更改
+  >回傳資料型態 函數名稱(struct 結構型態名稱 結構變數); (function declaration)  
+  >...  
+  >函數名稱(結構變數); (function call)
+
+  ##### <span style="color:#e5c07b">2. 結構傳址呼叫</span>
+  將結構變數的位址傳給函數，在函數內使用<span style="color:#e5c07b">結構指標</span>來存取資料，若在函數中更改了傳來的參數值，則main中結構變數的值也會同步更改
+  >回傳資料型態 函數名稱(struct 結構型態名稱 *結構變數); (function declaration)  
+  >...  
+  >函數名稱(&結構變數); (function call)
+
+  ##### <span style="color:#e5c07b">3. 結構傳參考呼叫</span>
+  把傳遞到函數中的結構變數作為main中結構變數的一個<span style="color:#e5c07b">別名</span>，若在函數中更改了傳來的參數值，則main中結構變數的值也會同步更改
+  >回傳資料型態 函數名稱(struct 結構型態名稱 &結構變數); (function declaration)  
+  >...  
+  >函數名稱(結構變數); (function call)
