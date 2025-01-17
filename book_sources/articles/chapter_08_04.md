@@ -36,10 +36,47 @@
   >enum 列舉型態名稱{  
 	>&nbsp;&nbsp;&nbsp;&nbsp;列舉成員1 = 預設值1;  
 	>&nbsp;&nbsp;&nbsp;&nbsp;列舉成員2 = 預設值2;  
-	>...  
-	>};
+	>&nbsp;&nbsp;&nbsp;&nbsp;...  
+	>};  
 	>(definition)    
 	>enum 列舉型態名稱 列舉型態變數;
+
+  !FILENAME Example 2
+  ```cpp
+	enum drink{
+			coffee,
+			milk,
+			tea = 41,
+			water,
+			juice = 10
+  };
+
+	enum drink mydrink;
+
+	mydrink = coffee;
+	cout << mydrink << endl;
+
+	mydrink = milk;
+	cout << mydrink << endl;
+
+	mydrink = tea;
+	cout << mydrink << endl;
+
+	mydrink = water;
+	cout << mydrink << endl;
+
+	mydrink = juice;
+	cout << mydrink << endl;
+  ```
+	
+  !FILENAME Output 2
+  ```
+  Line 12: 0
+  Line 14: 1
+	Line 16: 41
+	Line 18: 42
+	Line 20: 10
+  ```
 
   
 
