@@ -31,5 +31,15 @@
 
 ##### <span style="color:#e5c07b">2. 列舉型態指令(enum)</span>
 
+- 列舉型態指令的功能是給予一組常數集合而成的列舉成員，<span style="color:#e5c07b">各常數值不同的命名</span>。若無指定數值，預設將第一個列舉成員設為0，後面列舉成員的常數值則依序遞增
+  >(declaration)  
+  >enum 列舉型態名稱{  
+	>&nbsp;&nbsp;&nbsp;&nbsp;列舉成員1 = 預設值1;  
+	>&nbsp;&nbsp;&nbsp;&nbsp;列舉成員2 = 預設值2;  
+	>...  
+	>};
+	>(definition)    
+	>enum 列舉型態名稱 列舉型態變數;
+
   
 
