@@ -43,7 +43,7 @@
 
   !FILENAME Example 2
   ```cpp
-	enum drink{
+  enum drink{
       coffee,
       milk,
       tea = 41,
@@ -51,22 +51,22 @@
       uice = 10
   };
 
-	enum drink mydrink;
+  enum drink mydrink;
 
-	mydrink = coffee;
-	cout << mydrink << endl;
+  mydrink = coffee;
+  cout << mydrink << endl;
 
-	mydrink = milk;
-	cout << mydrink << endl;
+  mydrink = milk;
+  cout << mydrink << endl;
 
-	mydrink = tea;
-	cout << mydrink << endl;
+  mydrink = tea;
+  cout << mydrink << endl;
 
-	mydrink = water;
-	cout << mydrink << endl;
+  mydrink = water;
+  cout << mydrink << endl;
 
-	mydrink = juice;
-	cout << mydrink << endl;
+  mydrink = juice;
+  cout << mydrink << endl;
   ```
 
   !FILENAME Output 2
@@ -79,5 +79,7 @@
   ```
 
 ##### <span style="color:#e5c07b">3. 聯合型態指令(union)</span>
+
+- 聯合型態指令與結構型態指令在宣告、定義方法或是成員存取上都非常相似，不同的是結構中每個成員擁有各自的記憶體空間，而聯合卻是<span style="color:#e5c07b">共用記憶體空間</span>，並以<span style="color:#e5c07b">最大長度記憶體的成員</span>作為聯合的空間大小
   
 
