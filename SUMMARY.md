@@ -15,3 +15,4 @@
     * [Structure](./book_sources/articles/chapter_08_01.md)
     * [Structure Array](./book_sources/articles/chapter_08_02.md)
     * [Nested Structure](./book_sources/articles/chapter_08_03.md)
+    * [Typedef, Enum, and Union](./book_sources/articles/chapter_08_04.md)

@@ -102,8 +102,8 @@
   int main(){
 
       struct circle c[3] = { {"circle_1", 3, 0.0},
-                            {"circle_2", 3, 0.0},
-                            {"circle_3", 3, 0.0} };
+                             {"circle_2", 3, 0.0},
+                             {"circle_3", 3, 0.0} };
 
       func_cbv(c[0]);
       func_cba(&c[1]);

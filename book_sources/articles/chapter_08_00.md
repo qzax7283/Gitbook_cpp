@@ -6,4 +6,4 @@
 &nbsp;
 * [Nested Structure](./chapter_08_03.md)
 &nbsp;
-* [.](./chapter_07_04.md)
+* [Typedef, Enum, and Union](./chapter_08_04.md)
