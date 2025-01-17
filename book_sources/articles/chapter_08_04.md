@@ -10,18 +10,18 @@
   typedef int INTEGER;     // INTEGER被定義成int型態
   typedef char STRING[20]; // STRING被定義成長度20的字元陣列
   typedef struct hotel{
-			INTEGER room_number;
-			STRING hotel_name;
+      INTEGER room_number;
+      STRING hotel_name;
   }HOTEL_INFO;             // HOTEL_INFO被定義成struct hotel型態
 
   int main(){
-			HOTEL_INFO myhotel = {920, "Guitar_hotel"}; // 不必加上struct
+      HOTEL_INFO myhotel = {920, "Guitar_hotel"}; // 不必加上struct
 
-			cout << myhotel.room_number << endl;
-			cout << myhotel.hotel_name << endl;
+      cout << myhotel.room_number << endl;
+      cout << myhotel.hotel_name << endl;
 			
-			return 0;
-	}
+      return 0;
+  }
 	```
   !FILENAME Output 1
   ```
@@ -44,11 +44,11 @@
   !FILENAME Example 2
   ```cpp
 	enum drink{
-			coffee,
-			milk,
-			tea = 41,
-			water,
-			juice = 10
+      coffee,
+      milk,
+      tea = 41,
+      water,
+      uice = 10
   };
 
 	enum drink mydrink;
@@ -68,15 +68,16 @@
 	mydrink = juice;
 	cout << mydrink << endl;
   ```
-	
+
   !FILENAME Output 2
   ```
   Line 12: 0
   Line 14: 1
-	Line 16: 41
-	Line 18: 42
-	Line 20: 10
+  Line 16: 41
+  Line 18: 42
+  Line 20: 10
   ```
 
+##### <span style="color:#e5c07b">3. 聯合型態指令(union)</span>
   
 
