@@ -14,7 +14,7 @@
 			STRING hotel_name;
   }HOTEL_INFO;             // HOTEL_INFO被定義成struct hotel型態
 
-	int main(){
+  int main(){
 			HOTEL_INFO myhotel = {920, "Guitar_hotel"}; // 不必加上struct
 
 			cout << myhotel.room_number << endl;
@@ -23,7 +23,7 @@
 			return 0;
 	}
 	```
-	!FILENAME Output 1
+  !FILENAME Output 1
   ```
   Line 11: 920
   Line 12: Guitar_hotel
