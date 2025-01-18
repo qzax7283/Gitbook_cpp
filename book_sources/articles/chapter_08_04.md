@@ -84,8 +84,7 @@
   >(declaration)  
   >union 聯合型態名稱{  
   >&nbsp;&nbsp;&nbsp;&nbsp;資料型態 資料成員1;  
-  >&nbsp;&nbsp;&nbsp;&nbsp;資料型態 資料成員2;  
-  >&nbsp;&nbsp;&nbsp;&nbsp;資料型態 資料成員3; 
+  >&nbsp;&nbsp;&nbsp;&nbsp;資料型態 資料成員2;   
   >&nbsp;&nbsp;&nbsp;&nbsp;...  
   >};  
   >(definition)  
