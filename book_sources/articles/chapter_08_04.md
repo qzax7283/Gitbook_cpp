@@ -84,14 +84,61 @@
   >(declaration)  
   >union 聯合型態名稱{  
   >&nbsp;&nbsp;&nbsp;&nbsp;資料型態 資料成員1;  
-  >&nbsp;&nbsp;&nbsp;&nbsp;資料型態 資料成員2; 
+  >&nbsp;&nbsp;&nbsp;&nbsp;資料型態 資料成員2;  
   >&nbsp;&nbsp;&nbsp;&nbsp;資料型態 資料成員3; 
   >&nbsp;&nbsp;&nbsp;&nbsp;...  
   >};  
-  >(function)  
+  >(definition)  
   >union 聯合型態名稱 聯合變數;
 
-  
-  
-  
+  !FILENAME Example 3
+  ```cpp
+  int encode(int plain_text);
+  int decode(int cipher_text);
 
+  int main(){
+
+      int plain_text = 1234;
+
+      int cipher_text = encode(plain_text);
+      int decoded_text = decode(cipher_text);
+
+      cout << cipher_text << endl;
+      cout << decoded_text << endl;
+      
+      return 0;
+  }
+  int encode(int plain_text){
+      union{
+          int num;
+          char c[sizeof(int)];
+      }u1;
+
+      u1.num = plain_text;
+
+      for(int i = 0; i < sizeof(int); i++){
+          u1.c[i] += 32;
+      }
+
+      return u1.num;
+  }
+  int decode(int cipher_text){
+      union{
+          int num;
+          char c[sizeof(int)];
+      }u1;
+
+      u1.num = cipher_text;
+
+      for(int i = 0; i < sizeof(int); i++){
+          u1.c[i] -= 32;
+      }
+
+      return u1.num;
+  }
+  ```
+  !FILENAME Output 3
+  ```
+  Line 11: 538977522
+  Line 12: 1234
+  ```
