@@ -1,0 +1,694 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Parameter Passing of Functions · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-bottom-navigation/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../add.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter_07_02.html" />
+    
+    
+    <link rel="prev" href="chapter_07_00.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter_06_00.html">
+            
+                <a href="chapter_06_00.html">
+            
+                    
+                    Pointer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="chapter_06_01.html">
+            
+                <a href="chapter_06_01.html">
+            
+                    
+                    Introduction to Pointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="chapter_06_02.html">
+            
+                <a href="chapter_06_02.html">
+            
+                    
+                    Pointer and Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="chapter_06_03.html">
+            
+                <a href="chapter_06_03.html">
+            
+                    
+                    Dynamic Memory Allocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="chapter_06_04.html">
+            
+                <a href="chapter_06_04.html">
+            
+                    
+                    Introduction to Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter_07_00.html">
+            
+                <a href="chapter_07_00.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="chapter_07_01.html">
+            
+                <a href="chapter_07_01.html">
+            
+                    
+                    Parameter Passing of Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="chapter_07_02.html">
+            
+                <a href="chapter_07_02.html">
+            
+                    
+                    Pointer of Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="chapter_07_03.html">
+            
+                <a href="chapter_07_03.html">
+            
+                    
+                    Variable Type Modifiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="chapter_07_04.html">
+            
+                <a href="chapter_07_04.html">
+            
+                    
+                    Function Overloading
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter_08_00.html">
+            
+                <a href="chapter_08_00.html">
+            
+                    
+                    Self-defined Data Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="chapter_08_01.html">
+            
+                <a href="chapter_08_01.html">
+            
+                    
+                    Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="chapter_08_02.html">
+            
+                <a href="chapter_08_02.html">
+            
+                    
+                    Structure Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="chapter_08_03.html">
+            
+                <a href="chapter_08_03.html">
+            
+                    
+                    Nested Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="chapter_08_04.html">
+            
+                <a href="chapter_08_04.html">
+            
+                    
+                    Typedef, Enum, and Union
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter_09_00.html">
+            
+                <a href="chapter_09_00.html">
+            
+                    
+                    Object-Oriented Programming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="chapter_09_01.html">
+            
+                <a href="chapter_09_01.html">
+            
+                    
+                    Basic Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Parameter Passing of Functions</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="parameter-passing-of-functions">Parameter Passing of Functions</h1>
+<ul>
+<li><p>&#x51FD;&#x6578;&#x7684;&#x539F;&#x578B;(prototype)&#x5BA3;&#x544A;</p>
+<blockquote>
+<p>&#x56DE;&#x50B3;&#x8CC7;&#x6599;&#x578B;&#x614B; &#x51FD;&#x6578;&#x540D;&#x7A31;(&#x8CC7;&#x6599;&#x578B;&#x614B; &#x53C3;&#x6578;1, &#x8CC7;&#x6599;&#x578B;&#x614B; &#x53C3;&#x6578;2, ...);</p>
+</blockquote>
+<p>&#x6216;</p>
+<blockquote>
+<p>&#x56DE;&#x50B3;&#x8CC7;&#x6599;&#x578B;&#x614B; &#x51FD;&#x6578;&#x540D;&#x7A31;(&#x8CC7;&#x6599;&#x578B;&#x614B;, &#x8CC7;&#x6599;&#x578B;&#x614B;, ...);</p>
+</blockquote>
+</li>
+<li><p>&#x51FD;&#x6578;&#x662F;&#x7531;&#x51FD;&#x6578;&#x540D;&#x7A31;&#x3001;&#x53C3;&#x6578;&#x3001;&#x56DE;&#x50B3;&#x503C;&#x8207;&#x56DE;&#x50B3;&#x8CC7;&#x6599;&#x578B;&#x614B;&#x7D44;&#x6210;</p>
+<blockquote>
+<p>&#x56DE;&#x50B3;&#x8CC7;&#x6599;&#x578B;&#x614B; &#x51FD;&#x6578;&#x540D;&#x7A31;(&#x53C3;&#x6578;&#x5217;){<br>&#xA0;&#xA0;&#xA0;&#xA0;&#x7A0B;&#x5F0F;&#x6558;&#x8FF0;&#x5340;&#x584A;;<br>&#xA0;&#xA0;&#xA0;&#xA0;return &#x56DE;&#x50B3;&#x503C;;<br>}</p>
+</blockquote>
+<p>&#xA0;</p>
+<blockquote>
+<p>[!TIP]</p>
+<ol>
+<li>&#x53C3;&#x6578;&#x5217;&#x5FC5;&#x9808;&#x5305;&#x542B;&#x8CC7;&#x6599;&#x578B;&#x614B;&#x548C;&#x53C3;&#x6578;&#x540D;&#x7A31;  </li>
+<li>&#x82E5;&#x51FD;&#x6578;&#x6C92;&#x6709;&#x56DE;&#x50B3;&#x503C;&#xFF0C;&#x53EF;&#x4EE5;&#x7701;&#x7565;return&#x6558;&#x8FF0;</li>
+</ol>
+</blockquote>
+</li>
+<li><p>&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x51FD;&#x6578;&#x540D;&#x7A31;&#x5373;&#x53EF;&#x547C;&#x53EB;&#x51FD;&#x6578;</p>
+<blockquote>
+<p>&#x51FD;&#x6578;&#x540D;&#x7A31;(&#x5F15;&#x6578;1, &#x5F15;&#x6578;2, ...);</p>
+</blockquote>
+<p>&#x82E5;&#x51FD;&#x6578;&#x4E0D;&#x9700;&#x8981;&#x50B3;&#x5165;&#x53C3;&#x6578;</p>
+<blockquote>
+<p>&#x51FD;&#x6578;&#x540D;&#x7A31;();<br>or<br>&#x51FD;&#x6578;&#x540D;&#x7A31;(void);</p>
+</blockquote>
+<p>&#x82E5;&#x51FD;&#x6578;&#x6709;&#x56DE;&#x50B3;&#x503C;</p>
+<blockquote>
+<p>&#x8B8A;&#x6578; = &#x51FD;&#x6578;&#x540D;&#x7A31;(&#x5F15;&#x6578;1, &#x5F15;&#x6578;2, ...);</p>
+</blockquote>
+</li>
+<li><p>&#x51FD;&#x6578;&#x53C3;&#x6578;&#x7684;&#x7A2E;&#x985E;&#x5206;&#x70BA;&#x4EE5;&#x4E0B;&#x5169;&#x7A2E;&#xFF1A;<br>&#xA0;1. <span style="color:#e5c07b">&#x5F62;&#x5F0F;&#x53C3;&#x6578;(Formal Parameter)</span>&#xFF1A;&#x5728;&#x51FD;&#x6578;&#x5B9A;&#x7FA9;&#x6A19;&#x982D;&#x4E2D;&#x6240;&#x5BA3;&#x544A;&#x7684;&#x53C3;&#x6578;<br>&#xA0;2. <span style="color:#e5c07b">&#x5BE6;&#x969B;&#x53C3;&#x6578;(Actual Parameter)</span>&#xFF1A;&#x5BE6;&#x969B;&#x547C;&#x53EB;&#x51FD;&#x6578;&#x6642;&#x6240;&#x63D0;&#x4F9B;&#x7684;&#x53C3;&#x6578;  </p>
+</li>
+<li><p>&#x5C0D;&#x65BC;&#x50B3;&#x905E;&#x53C3;&#x6578;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x64DA;&#x50B3;&#x905E;&#x548C;&#x63A5;&#x6536;&#x7684;&#x662F;&#x53C3;&#x6578;&#x6578;&#x503C;&#x6216;&#x53C3;&#x6578;&#x4F4D;&#x5740;&#x5206;&#x70BA;&#x4E09;&#x7A2E;  </p>
+<h5 id="1-&#x50B3;&#x503C;&#x547C;&#x53EB;call-by-value"><span style="color:#e5c07b">1. &#x50B3;&#x503C;&#x547C;&#x53EB;(call by value)</span></h5>
+<p>&#x5C07;&#x5BE6;&#x969B;&#x53C3;&#x6578;&#x7684;&#x6578;&#x503C;<span style="color:#e5c07b">&#x8907;&#x88FD;&#x4E00;&#x4EFD;</span>&#x7D66;&#x51FD;&#x6578;&#x4E2D;&#x76F8;&#x5C0D;&#x61C9;&#x7684;&#x5F62;&#x5F0F;&#x53C3;&#x6578;&#xFF0C;&#x5F62;&#x5F0F;&#x53C3;&#x6578;&#x662F;&#x984D;&#x5916;&#x914D;&#x7F6E;&#x7684;&#x8A18;&#x61B6;&#x9AD4;&#xFF0C;&#x56E0;&#x6B64;&#x5728;&#x51FD;&#x6578;&#x5167;&#x7684;&#x5F62;&#x5F0F;&#x53C3;&#x6578;&#x57F7;&#x884C;&#x5B8C;&#x7562;&#x6642;&#xFF0C;&#x4E26;&#x4E0D;&#x6703;&#x66F4;&#x52D5;&#x5230;&#x539F;&#x672C;&#x4E3B;&#x7A0B;&#x5F0F;&#x4E2D;&#x547C;&#x53EB;&#x7684;&#x5167;&#x5BB9;&#x8B8A;&#x6578;</p>
+<blockquote>
+<p>&#x56DE;&#x50B3;&#x8CC7;&#x6599;&#x578B;&#x614B; &#x51FD;&#x6578;&#x540D;&#x7A31;(&#x8CC7;&#x6599;&#x578B;&#x614B; &#x53C3;&#x6578;1, &#x8CC7;&#x6599;&#x578B;&#x614B; &#x53C3;&#x6578;2, ...); (function declaration)<br>...<br>&#x51FD;&#x6578;&#x540D;&#x7A31;(&#x5F15;&#x6578;1, &#x5F15;&#x6578;2, ...); (function call)</p>
+</blockquote>
+<h5 id="2-&#x50B3;&#x5740;&#x547C;&#x53EB;call-by-address"><span style="color:#e5c07b">2. &#x50B3;&#x5740;&#x547C;&#x53EB;(call by address)</span></h5>
+<p>&#x5C07;&#x5BE6;&#x969B;&#x53C3;&#x6578;&#x7684;<span style="color:#e5c07b">&#x4F4D;&#x5740;</span>&#x76F4;&#x63A5;&#x50B3;&#x905E;&#x7D66;&#x6240;&#x5C0D;&#x61C9;&#x7684;&#x5F62;&#x5F0F;&#x53C3;&#x6578;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x914D;&#x7F6E;<span style="color:#e5c07b">&#x6307;&#x6A19;&#x8B8A;&#x6578;&#x7684;&#x5F62;&#x5F0F;&#x53C3;&#x6578;</span>&#x4F86;&#x5B58;&#x653E;&#x50B3;&#x5165;&#x7684;&#x8B8A;&#x6578;&#x4F4D;&#x5740;&#xFF0C;&#x5F85;&#x51FD;&#x6578;&#x57F7;&#x884C;&#x5B8C;&#x7562;&#x5F8C;&#xFF0C;&#x5C07;&#x6307;&#x6A19;&#x6307;&#x5411;&#x5BE6;&#x969B;&#x53C3;&#x6578;&#x7684;&#x8B8A;&#x6578;&#x4F4D;&#x5740;&#xFF0C;&#x66F4;&#x6539;&#x8B8A;&#x6578;&#x5167;&#x5BB9;</p>
+<blockquote>
+<p>&#x56DE;&#x50B3;&#x8CC7;&#x6599;&#x578B;&#x614B; &#x51FD;&#x6578;&#x540D;&#x7A31;(&#x8CC7;&#x6599;&#x578B;&#x614B; *&#x53C3;&#x6578;1, &#x8CC7;&#x6599;&#x578B;&#x614B; *&#x53C3;&#x6578;2, ...); (function declaration)<br>...<br>&#x51FD;&#x6578;&#x540D;&#x7A31;(&amp;&#x5F15;&#x6578;1, &amp;&#x5F15;&#x6578;2, ...); (function call)</p>
+</blockquote>
+<h5 id="3-&#x50B3;&#x53C3;&#x8003;&#x547C;&#x53EB;call-by-reference"><span style="color:#e5c07b">3. &#x50B3;&#x53C3;&#x8003;&#x547C;&#x53EB;(call by reference)</span></h5>
+<p>&#x5F62;&#x5F0F;&#x8B8A;&#x6578;&#x4E0D;&#x6703;&#x53E6;&#x5916;&#x518D;&#x914D;&#x7F6E;&#x8A18;&#x61B6;&#x9AD4;&#x5B58;&#x653E;&#x5BE6;&#x969B;&#x53C3;&#x6578;&#x50B3;&#x5165;&#x7684;&#x4F4D;&#x5740;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x628A;&#x5F62;&#x5F0F;&#x53C3;&#x6578;&#x4F5C;&#x70BA;&#x5BE6;&#x969B;&#x53C3;&#x6578;&#x7684;&#x4E00;&#x500B;<span style="color:#e5c07b">&#x5225;&#x540D;</span></p>
+<blockquote>
+<p>&#x56DE;&#x50B3;&#x8CC7;&#x6599;&#x578B;&#x614B; &#x51FD;&#x6578;&#x540D;&#x7A31;(&#x8CC7;&#x6599;&#x578B;&#x614B; &amp;&#x53C3;&#x6578;1, &#x8CC7;&#x6599;&#x578B;&#x614B; &amp;&#x53C3;&#x6578;2, ...); (function declaration)<br>...<br>&#x51FD;&#x6578;&#x540D;&#x7A31;(&#x5F15;&#x6578;1, &#x5F15;&#x6578;2, ...); (function call)</p>
+</blockquote>
+<div><p class="code-filename">Example 1</p></div>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">func_cbv</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">func_cba</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *a, <span class="hljs-keyword">int</span> *b)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">func_cbr</span><span class="hljs-params">(<span class="hljs-keyword">int</span> &amp;a, <span class="hljs-keyword">int</span> &amp;b)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">int</span> a = <span class="hljs-number">10</span>, b = <span class="hljs-number">41</span>;
+
+    func_cbv(a, b);   <span class="hljs-comment">// call by value</span>
+    func_cba(&amp;a, &amp;b); <span class="hljs-comment">// call by address</span>
+    func_cbr(a, b);   <span class="hljs-comment">// call by reference</span>
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">func_cbv</span><span class="hljs-params">(<span class="hljs-keyword">int</span> a, <span class="hljs-keyword">int</span> b)</span></span>{
+  a = <span class="hljs-number">41</span>;
+  b = <span class="hljs-number">10</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">func_cba</span><span class="hljs-params">(<span class="hljs-keyword">int</span> *a, <span class="hljs-keyword">int</span> *b)</span></span>{
+  *a = <span class="hljs-number">41</span>;
+  *b = <span class="hljs-number">10</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">func_cbr</span><span class="hljs-params">(<span class="hljs-keyword">int</span> &amp;a, <span class="hljs-keyword">int</span> &amp;b)</span></span>{
+  a = <span class="hljs-number">10</span>;
+  b = <span class="hljs-number">41</span>;
+}
+</code></pre>
+<div><p class="code-filename">Output 1</p></div>
+<pre><code>Line 06: a = 10 , b = 41 , &amp;a = 0x61ff0c , &amp;b = 0x61ff08
+Line 15: a = 10 , b = 41 , &amp;a = 0x61fef0 , &amp;b = 0x61fef4
+Line 08: a = 10 , b = 41 , &amp;a = 0x61ff0c , &amp;b = 0x61ff08
+
+Line 19: a = 0x61ff0c , b = 0x61ff08 , *a = 10 , *b = 41
+
+Line 09: a = 41 , b = 10 , &amp;a = 0x61ff0c , &amp;b = 0x61ff08
+Line 23: a = 41 , b = 10 , &amp;a = 0x61ff0c , &amp;b = 0x61ff08
+Line 10: a = 10 , b = 41 , &amp;a = 0x61ff0c , &amp;b = 0x61ff08
+</code></pre></li>
+<li><p>&#x7531;&#x65BC;&#x67D0;&#x4E9B;&#x53C3;&#x6578;&#x53EA;&#x6709;&#x5728;&#x7279;&#x6B8A;&#x60C5;&#x6CC1;&#x4E0B;&#x624D;&#x6703;&#x8B8A;&#x52D5;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x63A1;&#x53D6;&#x8A2D;&#x5B9A;&#x53C3;&#x6578;&#x9810;&#x8A2D;&#x503C;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5176;&#x51FD;&#x6578;<span style="color:#e5c07b">&#x539F;&#x578B;&#x5BA3;&#x544A;</span>&#x65B9;&#x5F0F;&#x5982;&#x4E0B;</p>
+<blockquote>
+<p>&#x56DE;&#x50B3;&#x8CC7;&#x6599;&#x578B;&#x614B; &#x51FD;&#x6578;&#x540D;&#x7A31;(&#x8CC7;&#x6599;&#x578B;&#x614B; &#x53C3;&#x6578;1, &#x8CC7;&#x6599;&#x578B;&#x614B; &#x53C3;&#x6578;2, ..., &#x8CC7;&#x6599;&#x578B;&#x614B; &#x53C3;&#x6578;n = &#x9810;&#x8A2D;&#x503C;);</p>
+</blockquote>
+<p>&#xA0;</p>
+<blockquote>
+<p>[!TIP]</p>
+<ol>
+<li>&#x6709;&#x9810;&#x8A2D;&#x503C;&#x7684;&#x53C3;&#x6578;&#x5FC5;&#x9808;&#x653E;&#x7F6E;&#x5728;&#x53C3;&#x6578;&#x5217;&#x7684;&#x5C3E;&#x7AEF; </li>
+<li>&#x4E0D;&#x80FD;&#x5728;&#x51FD;&#x6578;&#x5B9A;&#x7FA9;&#x6642;&#x518D;&#x6B21;&#x8A2D;&#x5B9A;&#x53C3;&#x6578;&#x7684;&#x9810;&#x8A2D;&#x503C;</li>
+</ol>
+</blockquote>
+</li>
+<li><p>&#x9663;&#x5217;&#x540D;&#x7A31;&#x5132;&#x5B58;&#x7684;&#x662F;&#x9663;&#x5217;&#x7B2C;&#x4E00;&#x500B;&#x5143;&#x7D20;&#x7684;&#x8A18;&#x61B6;&#x9AD4;&#x4F4D;&#x5740;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<span style="color:#e5c07b">&#x50B3;&#x5740;&#x547C;&#x53EB;</span>&#x50B3;&#x905E;&#x9663;&#x5217;&#x7D66;&#x53E6;&#x4E00;&#x500B;&#x51FD;&#x6578;&#xFF0C;&#x51FD;&#x6578;&#x539F;&#x578B;&#x5BA3;&#x544A;&#x65B9;&#x5F0F;<br>&#x4E00;&#x7DAD;&#x9663;&#x5217;&#xFF1A;</p>
+<blockquote>
+<p>&#x56DE;&#x50B3;&#x8CC7;&#x6599;&#x578B;&#x614B; &#x51FD;&#x6578;&#x540D;&#x7A31;(&#x8CC7;&#x6599;&#x578B;&#x614B; *&#x9663;&#x5217;&#x540D;&#x7A31;, ...);<br>or<br>&#x56DE;&#x50B3;&#x8CC7;&#x6599;&#x578B;&#x614B; &#x51FD;&#x6578;&#x540D;&#x7A31;(&#x8CC7;&#x6599;&#x578B;&#x614B; &#x9663;&#x5217;&#x540D;&#x7A31;[&#x9663;&#x5217;&#x5927;&#x5C0F;], ...);</p>
+</blockquote>
+<p>&#x4E8C;&#x7DAD;&#x9663;&#x5217;&#xFF1A;</p>
+<blockquote>
+<p>&#x56DE;&#x50B3;&#x8CC7;&#x6599;&#x578B;&#x614B; &#x51FD;&#x6578;&#x540D;&#x7A31;(&#x8CC7;&#x6599;&#x578B;&#x614B; &#x9663;&#x5217;&#x540D;&#x7A31;[&#x5217;&#x6578;][&#x884C;&#x6578;], ...);</p>
+</blockquote>
+<p>&#x51FD;&#x6578;&#x547C;&#x53EB;&#x65B9;&#x5F0F;</p>
+<blockquote>
+<p>&#x51FD;&#x6578;&#x540D;&#x7A31;(&#x9663;&#x5217;&#x540D;&#x7A31;);</p>
+</blockquote>
+<div><p class="code-filename">Example 2</p></div>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">func</span><span class="hljs-params">(<span class="hljs-keyword">int</span> arr[<span class="hljs-number">2</span>][<span class="hljs-number">3</span>])</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">int</span> arr[<span class="hljs-number">2</span>][<span class="hljs-number">3</span>] = { {<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>}, {<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>} };
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; arr &lt;&lt;<span class="hljs-built_in">endl</span>;
+
+    func(arr);
+
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">6</span>; i++){
+        <span class="hljs-built_in">cout</span> &lt;&lt; *(&amp;arr[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>]+i) &lt;&lt; <span class="hljs-string">&apos; &apos;</span>;
+    }   
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">func</span><span class="hljs-params">(<span class="hljs-keyword">int</span> arr[<span class="hljs-number">2</span>][<span class="hljs-number">3</span>])</span></span>{
+    <span class="hljs-built_in">cout</span> &lt;&lt; arr &lt;&lt;<span class="hljs-built_in">endl</span>;
+
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">2</span>; i++){
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">3</span>; j++){
+            arr[i][j] += <span class="hljs-number">1</span>;
+        }
+    }
+}
+</code></pre>
+<div><p class="code-filename">Output 2</p></div>
+<pre><code>Line 06: 0x61fef4
+Line 17: 0x61fef4
+Line 11: 2 3 4 5 6 7
+</code></pre></li>
+<li><p>&#x6307;&#x6A19;&#x4E5F;&#x53EF;&#x505A;&#x70BA;&#x51FD;&#x6578;&#x7684;&#x56DE;&#x50B3;&#x503C;&#xFF0C;&#x539F;&#x578B;&#x5BA3;&#x544A;&#x65B9;&#x5F0F;</p>
+<blockquote>
+<p>&#x56DE;&#x50B3;&#x8CC7;&#x6599;&#x578B;&#x614B; *&#x51FD;&#x6578;&#x540D;&#x7A31;(&#x8CC7;&#x6599;&#x578B;&#x614B; &#x53C3;&#x6578;1, &#x8CC7;&#x6599;&#x578B;&#x614B; &#x53C3;&#x6578;2, ...);</p>
+</blockquote>
+<div><p class="code-filename">Example 3</p></div>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">char</span>* <span class="hljs-title">func</span><span class="hljs-params">(<span class="hljs-keyword">char</span>* str1, <span class="hljs-keyword">char</span>* str2)</span></span>; <span class="hljs-comment">// call by address</span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">char</span> str1[<span class="hljs-number">100</span>] = {<span class="hljs-string">&quot;Hello &quot;</span>};
+    <span class="hljs-keyword">char</span> str2[<span class="hljs-number">100</span>] = {<span class="hljs-string">&quot;World&quot;</span>};
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; (<span class="hljs-keyword">int</span> *)str1 &lt;&lt; <span class="hljs-built_in">endl</span>;
+
+    <span class="hljs-keyword">char</span> *str3 = func(str1, str2);
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; str3 &lt;&lt; <span class="hljs-built_in">endl</span>;
+    <span class="hljs-built_in">cout</span> &lt;&lt; (<span class="hljs-keyword">int</span> *)str3 &lt;&lt; <span class="hljs-built_in">endl</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">char</span>* <span class="hljs-title">func</span><span class="hljs-params">(<span class="hljs-keyword">char</span>* str1, <span class="hljs-keyword">char</span>* str2)</span></span>{
+    <span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>, j = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">while</span>(*(str1+i) != <span class="hljs-string">&apos;\0&apos;</span>){
+        i++;
+    }
+    <span class="hljs-keyword">while</span>(*(str2+j) != <span class="hljs-string">&apos;\0&apos;</span>){
+        *(str1+i+j) = *(str2+j);
+        j++;
+    }
+    *(str1+i+j) = <span class="hljs-string">&apos;\0&apos;</span>;
+
+    <span class="hljs-built_in">cout</span> &lt;&lt; (<span class="hljs-keyword">int</span> *)str1 &lt;&lt; <span class="hljs-built_in">endl</span>;
+
+    <span class="hljs-keyword">return</span> str1;
+}
+</code></pre>
+<div><p class="code-filename">Output 3</p></div>
+<pre><code>Line 07: 0x61fea8
+Line 28: 0x61fea8
+Line 11: Hello World
+Line 12: 0x61fea8
+</code></pre></li>
+</ul>
+<div class="navPagesContainer"> <div class="navPagesLinks"> <a class="card cardPrevious"> <div class="cardIcon"> <i class="fa fa-angle-left"></i> </div> <div class="cardPreviousBody"> <div class="cardHint"> <span>Previous</span> </div> <div class="cardTitle"> <span>Functions</span> </div> </div> </a> <a class="card cardNext"> <div class="cardNextBody"> <div class="cardHint"> <span>Next</span> </div> <div class="cardTitle"> <span>Pointer of Functions</span> </div> </div> <div class="cardIcon"> <i class="fa fa-angle-right"></i> </div> </a> </div> </div>
+
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By qzax </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> Last update:  2025-01-20 14:00:35 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter_07_00.html" class="navigation navigation-prev " aria-label="Previous page: Functions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter_07_02.html" class="navigation navigation-next " aria-label="Next page: Pointer of Functions">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Parameter Passing of Functions","level":"1.3.1","depth":2,"next":{"title":"Pointer of Functions","level":"1.3.2","depth":2,"path":"book_sources/articles/chapter_07_02.md","ref":"./book_sources/articles/chapter_07_02.md","articles":[]},"previous":{"title":"Functions","level":"1.3","depth":1,"path":"book_sources/articles/chapter_07_00.md","ref":"./book_sources/articles/chapter_07_00.md","articles":[{"title":"Parameter Passing of Functions","level":"1.3.1","depth":2,"path":"book_sources/articles/chapter_07_01.md","ref":"./book_sources/articles/chapter_07_01.md","articles":[]},{"title":"Pointer of Functions","level":"1.3.2","depth":2,"path":"book_sources/articles/chapter_07_02.md","ref":"./book_sources/articles/chapter_07_02.md","articles":[]},{"title":"Variable Type Modifiers","level":"1.3.3","depth":2,"path":"book_sources/articles/chapter_07_03.md","ref":"./book_sources/articles/chapter_07_03.md","articles":[]},{"title":"Function Overloading","level":"1.3.4","depth":2,"path":"book_sources/articles/chapter_07_04.md","ref":"./book_sources/articles/chapter_07_04.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","highlight","code","bottom-navigation","page-footer-ex","codeblock-filename","flexible-alerts"],"pluginsConfig":{"page-footer-ex":{"copyright":"By qzax","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"Last update: "},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"dark","family":"sans"},"highlight":{},"codeblock-filename":{},"bottom-navigation":{"borderColor":"#873077","iconColor":null,"navNextSelector":null,"navPrevSelector":null,"nextText":"Next","pageInnerWidth":null,"prevText":"Previous","titleColor":null},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Note"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"add.css"}},"file":{"path":"book_sources/articles/chapter_07_01.md","mtime":"2025-01-20T14:00:35.107Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-01-20T14:01:17.209Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-bottom-navigation/stylish.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-bottom-navigation/href.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

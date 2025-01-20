@@ -1,0 +1,96 @@
+.gitbook-link {
+    display: none !important;
+}
+
+.card {
+    color: rgb(36, 42, 49);
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    box-shadow: none !important;
+    align-items: center;
+    justify-self: stretch;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    -webkit-box-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(28, 31, 43) !important;
+    border-image: initial;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 3px;
+    text-decoration: none;
+    page-break-inside: avoid;
+    transition: border 250ms ease 0s;
+}
+
+.book.font-size-2 .book-body .page-inner section {
+    font-size: 1.8rem !important; /* normal text: 16px -> 18px */
+}
+
+.page-footer-ex {
+    margin-top: 50px;
+    border-top: 1px solid #9daab6 !important;
+    overflow: hidden;
+    padding: 10px 0;
+    font-size: 12px;
+    color: #9daab6 !important;
+}
+
+.page-footer-ex a {
+    color: #9daab6 !important;
+    text-decoration: underline !important;
+}
+
+.book.color-theme-2 .book-header {
+    color: #7e888b;
+    background: transparent;
+    position: sticky !important;
+    top: 0 !important;
+}
+
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code {
+    color: #9dbed8;
+    background: #2d3143;
+    border-color: #2d3143;
+    line-height: 20px !important;
+    font-family: Consolas, 微軟正黑體, "Microsoft JhengHei", Georgia, serif !important;
+}
+
+.markdown-section blockquote {
+    margin: 0;
+    margin-bottom: .85em;
+    padding: 0 15px;
+    color:  #88c287!important;/*#97cd96 #56b6c2 #96cdb0 !important;*/
+    background: rgba(229, 229, 229, 0.07) !important;
+    border-left: none !important;
+    font-family: Consolas, 標楷體, DFKai-SB, "Microsoft JhengHei", Georgia, serif !important;
+}
+
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal blockquote {
+    border-color: #373b4e;
+    font-size: 15.5px !important;
+    line-height: 23px !important;
+}
+
+.code-filename{
+	background-color: #2d3143 !important;
+	display: inline-block;
+	padding: 2px 8px;
+	font-size: small;
+	line-height: inherit;
+	margin-bottom: 0px;
+}
+
+.alert.flat.tip {
+    color: #4a235a !important;
+    background-color: #d7bde2 !important;
+    border-color: #d7bde2 !important;
+}
+
+.alert.flat.tip .title {
+    color: #4a235a !important;
+}

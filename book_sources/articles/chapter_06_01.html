@@ -1,0 +1,568 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introduction to Pointer · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-bottom-navigation/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-footer-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-filename/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../add.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter_06_02.html" />
+    
+    
+    <link rel="prev" href="chapter_06_00.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter_06_00.html">
+            
+                <a href="chapter_06_00.html">
+            
+                    
+                    Pointer
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="chapter_06_01.html">
+            
+                <a href="chapter_06_01.html">
+            
+                    
+                    Introduction to Pointer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="chapter_06_02.html">
+            
+                <a href="chapter_06_02.html">
+            
+                    
+                    Pointer and Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="chapter_06_03.html">
+            
+                <a href="chapter_06_03.html">
+            
+                    
+                    Dynamic Memory Allocation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="chapter_06_04.html">
+            
+                <a href="chapter_06_04.html">
+            
+                    
+                    Introduction to Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter_07_00.html">
+            
+                <a href="chapter_07_00.html">
+            
+                    
+                    Functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="chapter_07_01.html">
+            
+                <a href="chapter_07_01.html">
+            
+                    
+                    Parameter Passing of Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="chapter_07_02.html">
+            
+                <a href="chapter_07_02.html">
+            
+                    
+                    Pointer of Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="chapter_07_03.html">
+            
+                <a href="chapter_07_03.html">
+            
+                    
+                    Variable Type Modifiers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="chapter_07_04.html">
+            
+                <a href="chapter_07_04.html">
+            
+                    
+                    Function Overloading
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter_08_00.html">
+            
+                <a href="chapter_08_00.html">
+            
+                    
+                    Self-defined Data Types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="chapter_08_01.html">
+            
+                <a href="chapter_08_01.html">
+            
+                    
+                    Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="chapter_08_02.html">
+            
+                <a href="chapter_08_02.html">
+            
+                    
+                    Structure Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="chapter_08_03.html">
+            
+                <a href="chapter_08_03.html">
+            
+                    
+                    Nested Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="chapter_08_04.html">
+            
+                <a href="chapter_08_04.html">
+            
+                    
+                    Typedef, Enum, and Union
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter_09_00.html">
+            
+                <a href="chapter_09_00.html">
+            
+                    
+                    Object-Oriented Programming
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="chapter_09_01.html">
+            
+                <a href="chapter_09_01.html">
+            
+                    
+                    Basic Concepts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Introduction to Pointer</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introduction-to-pointer">Introduction to Pointer</h1>
+<ul>
+<li><p>&#x8B8A;&#x6578;&#x4F4D;&#x5740;&#x7684;&#x5B58;&#x53D6;</p>
+<blockquote>
+<p>&amp;&#x8B8A;&#x6578;&#x540D;&#x7A31;;</p>
+</blockquote>
+</li>
+<li><p>&#x6307;&#x6A19;&#x8B8A;&#x6578;(pointer variable)&#x662F;&#x4E00;&#x7A2E;&#x7528;&#x4F86;<span style="color:#e5c07b">&#x5132;&#x5B58;&#x8A18;&#x61B6;&#x9AD4;&#x4F4D;&#x5740;&#x7684;&#x8B8A;&#x6578;</span>&#xFF0C;&#x5BA3;&#x544A;&#x65B9;&#x5F0F;</p>
+<blockquote>
+<p>&#x8CC7;&#x6599;&#x578B;&#x614B; *&#x6307;&#x6A19;&#x8B8A;&#x6578; = NULL; <em>(NULL&#x53EF;&#x7701;&#x7565;)</em><br>&#x6307;&#x6A19;&#x8B8A;&#x6578; = &amp;&#x8B8A;&#x6578;&#x540D;&#x7A31;;</p>
+</blockquote>
+<p>&#x6216;</p>
+<blockquote>
+<p>&#x8CC7;&#x6599;&#x578B;&#x614B; *&#x6307;&#x6A19;&#x8B8A;&#x6578; = &amp;&#x8B8A;&#x6578;&#x540D;&#x7A31;;</p>
+</blockquote>
+</li>
+<li><p>&#x82E5;&#x6307;&#x6A19;&#x8B8A;&#x6578;&#x5DF2;&#x7D93;&#x6307;&#x5411;&#x4E86;&#x4E00;&#x500B;&#x5BA3;&#x544A;&#x904E;&#x7684;&#x8B8A;&#x6578;&#x4F4D;&#x5740;&#x6642;&#xFF0C;&#x5247;&#x53EF;&#x900F;&#x904E;&#x53CD;&#x53C3;&#x8003;&#x904B;&#x7B97;&#x5B50;(*)&#x91CD;&#x65B0;&#x6307;&#x5B9A;&#x6307;&#x6A19;&#x8B8A;&#x6578;&#x7684;&#x8CC7;&#x6599;&#x5167;&#x5BB9;</p>
+<blockquote>
+<p>*&#x6307;&#x6A19;&#x8B8A;&#x6578; = &#x6578;&#x503C;;</p>
+</blockquote>
+<div><p class="code-filename">Example 1</p></div>
+<pre><code class="lang-cpp"><span class="hljs-keyword">int</span> num1 = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">int</span> *p1;
+
+p1 = &amp;num1;
+*p1 = <span class="hljs-number">41</span>;
+</code></pre>
+<div><p class="code-filename">Output 1</p></div>
+<pre><code>Line 04: p1 = 0x61ff08 , num1 = 10
+Line 05: p1 = 0x61ff08 , num1 = 41
+</code></pre></li>
+<li><p>&#x6307;&#x6A19;&#x8B8A;&#x6578;&#x7684;&#x52A0;&#x6E1B;&#x6CD5;&#x904B;&#x7B97;&#x7528;&#x65BC;&#x589E;&#x6E1B;&#x8A18;&#x61B6;&#x9AD4;&#x4F4D;&#x5740;&#x7684;<span style="color:#e5c07b">&#x4F4D;&#x79FB;&#x91CF;</span></p>
+<blockquote>
+<p>[!TIP]</p>
+<ol>
+<li>&#x6307;&#x6A19;&#x904B;&#x7B97;&#x53EA;&#x80FD;&#x91DD;&#x5C0D;&#x5E38;&#x6578;(&#x5982;+1&#x6216;-1)&#x4F86;&#x9032;&#x884C;&#xFF0C;&#x4E0D;&#x53EF;&#x505A;&#x6307;&#x6A19;&#x8B8A;&#x6578;&#x5F7C;&#x6B64;&#x9593;&#x7684;&#x904B;&#x7B97;  </li>
+<li>&#x76F8;&#x540C;&#x578B;&#x614B;&#x7684;&#x6307;&#x6A19;&#x8B8A;&#x6578;&#x53EF;&#x5229;&#x7528;&#x6BD4;&#x8F03;&#x904B;&#x7B97;&#x5B50;&#x4F86;&#x6BD4;&#x8F03;&#x4F4D;&#x5740;&#x7684;&#x5148;&#x5F8C;</li>
+</ol>
+</blockquote>
+<div><p class="code-filename">Example 2</p></div>
+<pre><code class="lang-cpp"><span class="hljs-keyword">int</span> num1 = <span class="hljs-number">10</span>;      <span class="hljs-comment">// int 4-bit</span>
+<span class="hljs-keyword">int</span> *p1 = &amp;num1;
+<span class="hljs-keyword">double</span> num2 = <span class="hljs-number">3.14</span>; <span class="hljs-comment">// double 8-bit</span>
+<span class="hljs-keyword">double</span> *p2 = &amp;num2;
+
+p1++;
+p2++;
+
+p1 -= <span class="hljs-number">3</span>;
+p2 -= <span class="hljs-number">3</span>;
+</code></pre>
+<div><p class="code-filename">Output 2</p></div>
+<pre><code>Line 04: p1 = 0x61ff04 , p2 = 0x61fef8
+Line 07: p1 = 0x61ff08 , p2 = 0x61ff00
+Line 10: p1 = 0x61fefc , p2 = 0x61fee8
+</code></pre></li>
+<li><p>&#x6307;&#x6A19;&#x8B8A;&#x6578;&#x672C;&#x8EAB;&#x4F54;&#x6709;&#x8A18;&#x61B6;&#x9AD4;&#x7A7A;&#x9593;&#xFF0C;&#x4E5F;&#x6709;&#x4E00;&#x500B;&#x5730;&#x5740;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x5BA3;&#x544A;<span style="color:#e5c07b">&#x6307;&#x5411;&#x6307;&#x6A19;&#x8B8A;&#x6578;&#x7684;&#x6307;&#x6A19;&#x8B8A;&#x6578;</span></p>
+<div><p class="code-filename">Example 3</p></div>
+<pre><code class="lang-cpp"><span class="hljs-keyword">int</span> num1 = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">int</span> *p1 = &amp;num1; <span class="hljs-comment">// &#x5B9A;&#x7FA9;&#x6307;&#x6A19;&#x8B8A;&#x6578;*p1&#xFF0C;&#x6307;&#x5411;&#x6574;&#x6578;&#x8B8A;&#x6578;num&#x7684;&#x4F4D;&#x5740;</span>
+<span class="hljs-keyword">int</span> **p2 = &amp;p1;  <span class="hljs-comment">// &#x5B9A;&#x7FA9;&#x6307;&#x6A19;&#x8B8A;&#x6578;**p2&#xFF0C;&#x6307;&#x5411;&#x6307;&#x6A19;&#x8B8A;&#x6578;p1&#x7684;&#x4F4D;&#x5740;</span>
+</code></pre>
+<div><p class="code-filename">Output 3</p></div>
+<pre><code>Line 02: p1 = 0x61ff08 , *p1 = 10
+Line 03: p2 = 0x61ff04 , *p2 = 0x61ff08 , **p2 = 10 , &amp;p2 = 0x61ff00
+</code></pre><p><img src="../pictures/pic_1.png" alt="Description" height="90" width="auto"></p>
+</li>
+</ul>
+<div class="navPagesContainer"> <div class="navPagesLinks"> <a class="card cardPrevious"> <div class="cardIcon"> <i class="fa fa-angle-left"></i> </div> <div class="cardPreviousBody"> <div class="cardHint"> <span>Previous</span> </div> <div class="cardTitle"> <span>Pointer</span> </div> </div> </a> <a class="card cardNext"> <div class="cardNextBody"> <div class="cardHint"> <span>Next</span> </div> <div class="cardTitle"> <span>Pointer and Array</span> </div> </div> <div class="cardIcon"> <i class="fa fa-angle-right"></i> </div> </a> </div> </div>
+
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> By qzax </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> Last update:  2025-01-20 14:00:35 </span> </footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chapter_06_00.html" class="navigation navigation-prev " aria-label="Previous page: Pointer">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="chapter_06_02.html" class="navigation navigation-next " aria-label="Next page: Pointer and Array">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduction to Pointer","level":"1.2.1","depth":2,"next":{"title":"Pointer and Array","level":"1.2.2","depth":2,"path":"book_sources/articles/chapter_06_02.md","ref":"./book_sources/articles/chapter_06_02.md","articles":[]},"previous":{"title":"Pointer","level":"1.2","depth":1,"path":"book_sources/articles/chapter_06_00.md","ref":"./book_sources/articles/chapter_06_00.md","articles":[{"title":"Introduction to Pointer","level":"1.2.1","depth":2,"path":"book_sources/articles/chapter_06_01.md","ref":"./book_sources/articles/chapter_06_01.md","articles":[]},{"title":"Pointer and Array","level":"1.2.2","depth":2,"path":"book_sources/articles/chapter_06_02.md","ref":"./book_sources/articles/chapter_06_02.md","articles":[]},{"title":"Dynamic Memory Allocation","level":"1.2.3","depth":2,"path":"book_sources/articles/chapter_06_03.md","ref":"./book_sources/articles/chapter_06_03.md","articles":[]},{"title":"Introduction to Reference","level":"1.2.4","depth":2,"path":"book_sources/articles/chapter_06_04.md","ref":"./book_sources/articles/chapter_06_04.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing","highlight","code","bottom-navigation","page-footer-ex","codeblock-filename","flexible-alerts"],"pluginsConfig":{"page-footer-ex":{"copyright":"By qzax","markdown":false,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"Last update: "},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"dark","family":"sans"},"highlight":{},"codeblock-filename":{},"bottom-navigation":{"borderColor":"#873077","iconColor":null,"navNextSelector":null,"navPrevSelector":null,"nextText":"Next","pageInnerWidth":null,"prevText":"Previous","titleColor":null},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"flat","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Note"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"add.css"}},"file":{"path":"book_sources/articles/chapter_06_01.md","mtime":"2025-01-20T14:00:35.107Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-01-20T14:01:17.209Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-bottom-navigation/stylish.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-bottom-navigation/href.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
